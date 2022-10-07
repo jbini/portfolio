@@ -7,20 +7,20 @@
 
 
 .menu-container {
-  background-color: #333333;
+  background-color: #c96a6a;
   display: block;
   position: fixed;
-  width: 300px;
+  width: calc(10% + 50px);
   height: 100%;
 }
 .menu-list-box {
   background-color: aqua;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 3vw;
+  left: calc(10% + 5px);
   display: block;
-  width: 200px;
-  height: 400px;
+  width: calc(5px + 60%);
+  height: calc(50px + 20vw);
 }
 
 
@@ -29,9 +29,9 @@
   /* background-image: url(/src/img/main.jpg);
   filter: opacity(50%); */
   position: absolute;
-  left: 300px;
+  left: calc(10% + 50px);
   display: block;
-  width: calc(100% - 300px);
+  width: calc(90% - 50px);
   min-height: 1500px;
 }
 .main-cover-imgbox {

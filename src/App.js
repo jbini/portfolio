@@ -1,8 +1,10 @@
 // import logo from './logo.svg';
 import main from './img/main.jpg'
+import main2 from './img/main2.jpg'
+import main22 from './img/main2-2.jpg'
 import './App.css';
 
-let mainimg = main
+let mainimg = main2
 
 function App() {
   return (
@@ -10,6 +12,9 @@ function App() {
 
       <div className='menu-container'>
         <div className='menu-list-box'>
+          
+        </div>
+        <div className='menu-address-box'>
           
         </div>
       </div>

@@ -1,16 +1,16 @@
 .main {
   width: 100%;
-  min-height: 1500px;
-  background-color: #333333;
+  min-height: 2000px;
+  background-color: #2c2c2c;
   position: relative;
 }
 
 
 .menu-container {
-  background-color: #c96a6a;
+  background-color: #2c2c2c;
   display: block;
   position: fixed;
-  width: calc(10% + 50px);
+  width: calc(15% + 50px);
   height: 100%;
 }
 .menu-list-box {
@@ -19,23 +19,31 @@
   top: 3vw;
   left: calc(10% + 5px);
   display: block;
-  width: calc(5px + 60%);
-  height: calc(50px + 20vw);
+  width: calc(5px + 70%);
+  min-height: calc(50px + 20vw);
 }
-
+.menu-address-box {
+  background-color: aqua;
+  position: absolute;
+  bottom: 1vw;
+  left: calc(10% + 5px);
+  display: block;
+  width: calc(5px + 70%);
+  min-height: calc(30px + 6vw);
+}
 
 
 .main-cover-container {
   /* background-image: url(/src/img/main.jpg);
   filter: opacity(50%); */
-  position: absolute;
-  left: calc(10% + 50px);
+  position: relative;
+  left: calc(15% + 50px);
   display: block;
-  width: calc(90% - 50px);
-  min-height: 1500px;
+  width: calc(85% - 50px);
+  min-height: 500px;
 }
 .main-cover-imgbox {
-  height: 1500px;
+  height: 100%;
   overflow: hidden;
   opacity: 30%;
 }

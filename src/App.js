@@ -14,11 +14,11 @@ function App() {
         <div className='menu-container'>
 
           <div className='menu-list-box'>
+            <div className='menu-list-line'><h4>Main</h4></div>
             <div className='menu-list-line'><h4>a</h4></div>
-            <div className='menu-list-line'>b</div>
-            <div className='menu-list-line'>c</div>
-            <div className='menu-list-line'>d</div>
-            <div className='menu-list-line'>e</div>
+            <div className='menu-list-line'><h4>a</h4></div>
+            <div className='menu-list-line'><h4>a</h4></div>
+            <div className='menu-list-line'><a href='https://github.com/jbini' target='_blank' rel="noreferrer">Github</a></div>
           </div>
           <div className='menu-address-box'>
             

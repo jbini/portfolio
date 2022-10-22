@@ -14,8 +14,16 @@ export default function Main() {
           </div>
 
           <div className='main-cover-box'>
-            <div className='main-cover-sub'></div>
-            <div className='main-cover-content'></div>
+
+            <div className='main-cover-sub'>
+              <h3>임종빈</h3>
+              
+            </div>
+
+            <div className='main-cover-content'>
+              <h4>배움</h4>
+            </div>
+
           </div>
 
         </div>

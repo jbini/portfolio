@@ -13,6 +13,11 @@ export default function Main() {
               <img src={mainimg} alt='mainimg'></img>
           </div>
 
+          <div className='main-cover-box'>
+            <div className='main-cover-sub'></div>
+            <div className='main-cover-content'></div>
+          </div>
+
         </div>
     );
 }

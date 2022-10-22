@@ -1,0 +1,33 @@
+
+
+
+
+/* 메인 배경 */
+.about-cover-container {
+  position: absolute;
+  left: calc(15vmax + 50px);
+  display: block;
+  width: calc(85vmax - 50px);
+  height: 100vh;
+}
+.about-cover-imgbox {
+  position: relative;
+  display: block;
+  /* overflow: hidden; */
+  opacity: 30%;
+}
+  
+.about-cover-imgbox img {
+  position: absolute;
+  bottom: -105vh;
+  width: 100%;
+}
+@media screen and (max-width: 1350px) {
+  .about-cover-container .main-cover-imgbox img {
+    position: absolute;
+    bottom: -100vh;
+    width: 100%;
+  }
+}
+
+

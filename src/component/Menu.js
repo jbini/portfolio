@@ -9,7 +9,7 @@ export default function Menu() {
 
           <div className='menu-list-box'>
             <div className='menu-list-line'>
-              <h4 id='list-line-1'>M</h4><h4>ain</h4>
+              <Link to='/' id='list-line-1'>M</Link><Link to='/'>ain</Link>
               <div className='underline-box' id='underline-box1'>
                 <div className='underline-1'></div>
                 <div className='underline-2'></div>
@@ -17,7 +17,7 @@ export default function Menu() {
             </div>
 
             <div className='menu-list-line'>
-              <h4 id='list-line-2'>A</h4><h4>bout</h4>
+              <Link to='/About' id='list-line-2'>A</Link><Link to='/About'>bout</Link>
               <div className='underline-box' id='underline-box2'>
                 <div className='underline-1'></div>
                 <div className='underline-2'></div>
@@ -25,7 +25,7 @@ export default function Menu() {
             </div>
 
             <div className='menu-list-line'>
-              <h4 id='list-line-3'>P</h4><h4>roject</h4>
+              <Link to='/Project' id='list-line-3'>P</Link><Link to='/Project'>roject</Link>
               <div className='underline-box' id='underline-box3'>
                 <div className='underline-1'></div>
                 <div className='underline-2'></div>

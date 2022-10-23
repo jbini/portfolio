@@ -1,13 +1,16 @@
 import '../css/Main.css';
 import main from '../img/main.jpg'
 import main2 from '../img/main2.jpg'
-import main22 from '../img/main2-2.jpg'
+import Keyboardiframe from './Keyboardiframe'
+
 
 let mainimg = main2
 
 export default function Main() {
     return(
+        
         <div className='main-cover-container'>
+          <Keyboardiframe />
 
           <div className='main-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>
@@ -43,8 +46,10 @@ export default function Main() {
               <h3>임종빈</h3>
             </div>
 
+            <div className='main-cover-underline'></div>
+
             <div className='main-cover-content'>
-              <h4>배움</h4>
+              <h4>인생은 배움이다</h4>
             </div>
 
           </div>

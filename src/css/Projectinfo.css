@@ -23,7 +23,7 @@
   width: 100%;
 }
 @media screen and (max-width: 1350px) {
-  .project-cover-container .main-cover-imgbox img {
+  .project-cover-container .project-cover-imgbox img {
     position: absolute;
     bottom: -100vh;
     width: 100%;

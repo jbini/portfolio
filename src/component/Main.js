@@ -1,10 +1,11 @@
 import '../css/Main.css';
-import main from '../img/main.jpg'
 import main2 from '../img/main2.jpg'
+import main2me from '../img/main2-2.jpg'
 import Keyboardiframe from './Keyboardiframe'
 
 
 let mainimg = main2
+let mainimg2 = main2me
 
 export default function Main() {
     return(
@@ -14,6 +15,9 @@ export default function Main() {
 
           <div className='main-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>
+          </div>
+          <div className='main-cover-imgbox2'>
+              <img src={mainimg2} alt='mainimg2'></img>
           </div>
 
           <div className='main-cover-box'>

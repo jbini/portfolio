@@ -54,7 +54,7 @@ export default function Menu() {
 
           <div className='menu-address-box'>
             <div className='menu-address-line'><h5>jbini515@gmail.com</h5></div>
-            <div className='menu-address-line'><h5>010-6338-4143</h5></div>
+            <div className='menu-address-line'><h5>+82) 10-6338-4143</h5></div>
           </div>
 
         </div>

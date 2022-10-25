@@ -33,6 +33,7 @@ h5 {
   left: 0;
   width: calc(15vmax + 50px);
   height: 100%;
+  z-index: 2;
 }
 .menu-list-box {
   position: absolute;

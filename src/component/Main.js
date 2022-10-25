@@ -20,6 +20,10 @@ export default function Main() {
               <img src={mainimg2} alt='mainimg2'></img>
           </div>
 
+          {/* <div className='main-cover-line-box'>
+            <div className='main-cover-line'></div>
+          </div> */}
+
           <div className='main-cover-box'>
 
             <div className='main-cover-sub' id='typing-1'>

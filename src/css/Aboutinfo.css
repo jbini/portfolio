@@ -16,14 +16,33 @@
   /* overflow: hidden; */
   opacity: 30%;
 }
-  
 .about-cover-imgbox img {
   position: absolute;
   bottom: -105vh;
   width: 100%;
 }
+
+.about-cover-imgbox2 {
+  position: relative;
+  display: block;
+  /* overflow: hidden; */
+  filter: brightness(55%);
+  z-index: 5;
+}
+.about-cover-imgbox2 img {
+  position: absolute;
+  bottom: -105vh;
+  width: 100%;
+}
+
+
 @media screen and (max-width: 1350px) {
   .about-cover-container .about-cover-imgbox img {
+    position: absolute;
+    bottom: -100vh;
+    width: 100%;
+  }
+  .about-cover-container .about-cover-imgbox2 img {
     position: absolute;
     bottom: -100vh;
     width: 100%;
@@ -31,3 +50,34 @@
 }
 
 
+/* 대각선 라인 */
+.about-cover-line-box {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+.about-cover-line {
+  background-color: rgb(240, 203, 101);
+  position: absolute;
+  top: -100vmax;
+  display: block;
+  width: 1vmax;
+  height: 200vmax;
+  transform: rotate(45deg);
+  z-index: 1;
+  animation: aboutline 3s ease;
+}
+@keyframes aboutline {
+  0% {
+    height: 0px;
+    top: 0vmax;
+  }
+  100% {
+    height: 200vmax;
+    top: -100vmax;
+  }
+}

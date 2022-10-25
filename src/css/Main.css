@@ -51,6 +51,40 @@
 
 
 
+/* 대각선 라인
+.main-cover-line-box {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+.main-cover-line {
+  background-color: rgb(101, 240, 159);
+  position: absolute;
+  top: -100vmax;
+  display: block;
+  width: 3vmax;
+  height: 200vmax;
+  transform: rotate(45deg);
+  z-index: 1;
+  animation: mainline 3s ease;
+}
+@keyframes mainline {
+  0% {
+    height: 0px;
+    top: 0vmax;
+  }
+  100% {
+    height: 200vmax;
+    top: -100vmax;
+  }
+} */
+
+
+
   /* 텍스트 박스 */
 .main-cover-box {
   /* background-color: salmon; */
@@ -63,6 +97,7 @@
   height: calc(6vmax + 20px);
   /* min-width: calc(20vmax - 20px); */
   /* min-height: calc(10vmax - 10px); */
+  z-index: 2;
 }
 .main-cover-box h3 {
   font-family: 'ONE-Mobile-Title';
@@ -200,3 +235,5 @@
     opacity: 100%;
   }
 }
+
+

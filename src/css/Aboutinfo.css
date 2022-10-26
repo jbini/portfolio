@@ -116,6 +116,100 @@
   }
 }
 
+
+/* 버튼 강조 원 */
+.line-btn-click1 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5s infinite;
+}
+.line-btn-click2 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5.5s infinite;
+}
+.line-btn-click3 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 4s infinite;
+}
+.line-btn-click4 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 4.5s infinite;
+}
+@keyframes click1 {
+  0% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 0%;
+  }
+  21% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 0%;
+  }
+  22% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 70%;
+  }
+  30% {
+      width: 5.3vmax;
+      height: 5.3vmax;
+      opacity: 20%;
+  }
+  70% {
+      width: 5.4vmax;
+      height: 5.4vmax;
+      opacity: 0%;
+  }
+  100% {
+      width: 5vmax;
+      height: 5vmax;
+      opacity: 0%;
+  }
+}
+
+
+
+/* 라인 버튼 */
 .line-button1 {
   background-image: url(../img/left.jpg);
   background-size: 4vmax;
@@ -127,7 +221,8 @@
   height: 4vmax;
   z-index: 7;
   cursor: pointer;
-  animation: linebtn 5s ease;
+  scale: 0%;
+  animation: arrowmove 2s 5s ease infinite;
 }
 .line-button2 {
   background-image: url(../img/right.jpg);
@@ -140,9 +235,43 @@
   height: 4vmax;
   z-index: 7;
   cursor: pointer;
-  animation: linebtn 4s ease;
+  scale: 0%;
+  animation: arrowmove 2s 4s ease infinite;
 }
-@keyframes linebtn {
+@keyframes arrowmove {
+  0% {
+    scale: 100%;
+  }
+  20% {
+    scale: 100%;
+  }
+  24% {
+    scale: 117%;
+  }
+  30% {
+    scale: 120%;
+  }
+  42% {
+    scale: 100%;
+  }
+  44% {
+    scale: 100%;
+  }
+  48% {
+    scale: 115%;
+  }
+  54% {
+    scale: 120%;
+  }
+  66% {
+    scale: 100%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+/* @keyframes linebtn {
   0% {
     opacity: 0%;
   }
@@ -152,7 +281,7 @@
   100% {
     opacity: 100%;
   }
-}
+} */
 #line-btn1:checked ~ .about-cover-line-box2 {
   left: 15%;
   transition: 2.5s;
@@ -203,7 +332,19 @@
 #line-btn1:checked ~ .about-cover-line-box2 .line-button1 {
   display: none;
 }
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click1 {
+  display: none;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click2 {
+  display: none;
+}
 #line-btn1:checked ~ .about-cover-line-box2 .line-button2 {
+  display: block;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click3 {
+  display: block;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click4 {
   display: block;
 }
 
@@ -251,6 +392,8 @@
     width: 4vmax;
   }
 }
+
+
 
 
 
@@ -350,3 +493,9 @@
     translate: 0%;
   }
 }
+
+
+
+
+
+

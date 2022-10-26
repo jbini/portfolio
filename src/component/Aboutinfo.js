@@ -29,7 +29,11 @@ export default function Aboutinfo() {
             <div className='about-cover-line2'></div>
             <label for='line-btn1' className='line-button1'></label>
             <label for='line-btn2' className='line-button2'></label>
-          </div>
+            <div className='line-btn-click1'></div>
+            <div className='line-btn-click2'></div>
+            <div className='line-btn-click3'></div>
+            <div className='line-btn-click4'></div>
+            </div>
 
           <div className='about-line1'>
             <div className='line-move'>

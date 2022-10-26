@@ -10,6 +10,10 @@
   width: calc(85vmax - 50px);
   height: 100vh;
 }
+.about-cover-container h4 {
+  font-family: 'ONE-Mobile-Title';
+  font-weight: 100;
+}
 .about-cover-imgbox {
   position: relative;
   display: block;
@@ -52,32 +56,169 @@
 
 /* 대각선 라인 */
 .about-cover-line-box {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   position: absolute;
   top: 50%;
   left: 50%;
   display: block;
-  width: 5px;
-  height: 5px;
+  /* width: 5px;
+  height: 5px; */
 }
 .about-cover-line {
+  background-color: rgb(211, 178, 89);
+  position: absolute;
+  top: -100vmax;
+  display: block;
+  width: 2vmax;
+  height: 200vmax;
+  transform: rotate(35deg);
+  z-index: 1;
+  animation: aboutline 4s ease;
+}
+@keyframes aboutline {
+  0% {
+    top: -400vmax;
+    left: 210vmax;
+  }
+  /* 10% {
+    top: -400vmax;
+    left: 210vmax;
+  } */
+  100% {
+    top: -100vmax;
+    left: 0;
+  }
+}
+
+
+.about-cover-line-box2 {
+  /* background-color: #ffffff; */
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  display: block;
+  /* width: 5px;
+  height: 5px; */
+}
+.about-cover-line2 {
   background-color: rgb(240, 203, 101);
   position: absolute;
   top: -100vmax;
   display: block;
-  width: 1vmax;
+  width: 4vmax;
   height: 200vmax;
-  transform: rotate(45deg);
-  z-index: 1;
-  animation: aboutline 3s ease;
+  transform: rotate(35deg);
+  z-index: 6;
+  animation: aboutline2 4s ease;
 }
-@keyframes aboutline {
+@keyframes aboutline2 {
   0% {
-    height: 0px;
-    top: 0vmax;
+    top: 200vmax;
+    left: -210vmax;
+  }
+  /* 10% {
+    top: 200vmax;
+    left: -210vmax;
+  } */
+  100% {
+    top: -100vmax;
+    left: 0;
+  }
+}
+
+
+.about-line1 {
+  /* background-color: darkslategray; */
+  position: absolute;
+  top: calc(3vmax + 60px);
+  left: 10%;
+  display: block;
+  width: 64.5%;
+  height: calc(1.5vmax + 30px);
+  z-index: 4;
+  overflow: hidden;
+}
+.about-line2 {
+  /* background-color: darkslategray; */
+  position: absolute;
+  top: calc(4.5vmax + 90px);
+  left: 10%;
+  display: block;
+  width: 62.5%;
+  height: calc(1.5vmax + 30px);
+  z-index: 4;
+  overflow: hidden;
+}
+.about-line3 {
+  /* background-color: darkslategray; */
+  position: absolute;
+  top: calc(6vmax + 120px);
+  left: 10%;
+  display: block;
+  width: 60%;
+  height: calc(1.5vmax + 30px);
+  z-index: 4;
+  overflow: hidden;
+}
+
+
+.line-move {
+  position: absolute;
+  left: 20vmax;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+.about-line1 h4 {
+  animation: linemove 6s  ease;
+}
+.about-line2 h4 {
+  animation: linemove2 6s  ease;
+}
+.about-line3 h4 {
+  animation: linemove3 6s  ease;
+}
+@keyframes linemove {
+  0% {
+    translate: 50vmax;
+  }
+  35% {
+    translate: 50vmax;
+  }
+  70% {
+    translate: 0%;
   }
   100% {
-    height: 200vmax;
-    top: -100vmax;
+    translate: 0%;
+  }
+}
+@keyframes linemove2 {
+  0% {
+    translate: 50vmax;
+  }
+  45% {
+    translate: 50vmax;
+  }
+  80% {
+    translate: 0%;
+  }
+  100% {
+    translate: 0%;
+  }
+}
+@keyframes linemove3 {
+  0% {
+    translate: 50vmax;
+  }
+  55% {
+    translate: 50vmax;
+  }
+  90% {
+    translate: 0%;
+  }
+  100% {
+    translate: 0%;
   }
 }

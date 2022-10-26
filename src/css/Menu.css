@@ -33,7 +33,7 @@ h5 {
   left: 0;
   width: calc(15vmax + 50px);
   height: 100%;
-  z-index: 2;
+  z-index: 10;
 }
 .menu-list-box {
   position: absolute;
@@ -87,7 +87,7 @@ h5 {
   display: block;
   width: 1vmin;
   height: .5vmin;
-  z-index: 3;
+  z-index: 13;
 }
 .underline-2 {
   background-color: #151515;
@@ -97,7 +97,7 @@ h5 {
   display: block;
   width: 1vmin;
   height: .5vmin;
-  z-index: 2;
+  z-index: 12;
 }
 .menu-container:hover .underline-box {
   transition: .5s;

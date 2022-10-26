@@ -1,6 +1,8 @@
 import '../css/Aboutinfo.css';
 import main2 from '../img/main2.jpg'
 import main2me from '../img/main2-2.jpg'
+import left from '../img/left.jpg'
+import right from '../img/right.jpg'
 
 
 let mainimg = main2
@@ -9,6 +11,9 @@ let mainimg2 = main2me
 export default function Aboutinfo() {
     return(
         <div className='about-cover-container'>
+
+          <input type='radio' name='line-radio' id='line-btn1'></input>
+          <input type='radio' name='line-radio' id='line-btn2'></input>
 
           <div className='about-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>
@@ -22,6 +27,8 @@ export default function Aboutinfo() {
           </div>
           <div className='about-cover-line-box2'>
             <div className='about-cover-line2'></div>
+            <label for='line-btn1' className='line-button1'></label>
+            <label for='line-btn2' className='line-button2'></label>
           </div>
 
           <div className='about-line1'>

@@ -56,79 +56,66 @@
 
 /* 대각선 라인 */
 .about-cover-line-box {
-  /* background-color: #ffffff; */
   position: absolute;
   top: 50%;
   left: 50%;
   display: block;
-  /* width: 5px;
-  height: 5px; */
 }
 .about-cover-line {
   background-color: rgb(211, 178, 89);
+  background: linear-gradient( rgb(240, 203, 101), rgb(240, 203, 101), rgb(186, 255, 201));
   position: absolute;
-  top: -100vmax;
+  top: -150vmax;
   display: block;
   width: 2vmax;
-  height: 200vmax;
+  height: 300vmax;
   transform: rotate(35deg);
   z-index: 1;
-  animation: aboutline 4s ease;
+  animation: aboutline 3s ease;
 }
 @keyframes aboutline {
   0% {
-    top: -400vmax;
-    left: 210vmax;
+    top: -600vmax;
+    left: 320vmax;
   }
-  /* 10% {
-    top: -400vmax;
-    left: 210vmax;
-  } */
   100% {
-    top: -100vmax;
+    top: -150vmax;
     left: 0;
   }
 }
 
 
 .about-cover-line-box2 {
-  /* background-color: #ffffff; */
   position: absolute;
   top: 50%;
   left: 55%;
   display: block;
-  /* width: 5px;
-  height: 5px; */
 }
 .about-cover-line2 {
   background-color: rgb(240, 203, 101);
+  background: linear-gradient( rgb(186, 255, 201), rgb(240, 203, 101), rgb(240, 203, 101));
   position: absolute;
-  top: -100vmax;
+  top: -150vmax;
   display: block;
   width: 4vmax;
-  height: 200vmax;
+  height: 300vmax;
   transform: rotate(35deg);
   z-index: 6;
-  animation: aboutline2 4s ease;
+  animation: aboutline2 3s ease;
 }
 @keyframes aboutline2 {
   0% {
-    top: 200vmax;
-    left: -210vmax;
+    top: 300vmax;
+    left: -320vmax;
   }
-  /* 10% {
-    top: 200vmax;
-    left: -210vmax;
-  } */
   100% {
-    top: -100vmax;
+    top: -150vmax;
     left: 0;
   }
 }
 
 
 .about-line1 {
-  /* background-color: darkslategray; */
   position: absolute;
   top: calc(3vmax + 60px);
   left: 10%;
@@ -139,7 +126,6 @@
   overflow: hidden;
 }
 .about-line2 {
-  /* background-color: darkslategray; */
   position: absolute;
   top: calc(4.5vmax + 90px);
   left: 10%;
@@ -150,7 +136,6 @@
   overflow: hidden;
 }
 .about-line3 {
-  /* background-color: darkslategray; */
   position: absolute;
   top: calc(6vmax + 120px);
   left: 10%;
@@ -172,13 +157,13 @@
 
 
 .about-line1 h4 {
-  animation: linemove 6s  ease;
+  animation: linemove 4.5s  ease;
 }
 .about-line2 h4 {
-  animation: linemove2 6s  ease;
+  animation: linemove2 4.5s  ease;
 }
 .about-line3 h4 {
-  animation: linemove3 6s  ease;
+  animation: linemove3 4.5s  ease;
 }
 @keyframes linemove {
   0% {

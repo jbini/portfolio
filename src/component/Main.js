@@ -59,6 +59,10 @@ export default function Main() {
             <div className='main-cover-content'>
               <h4>인생은 배움이다</h4>
             </div>
+            
+            <div className='main-cover-content2'>
+              <h5>배움을 얻을수록 전에는 보이지 않던 것들이 보이며 자신감이 생겼습니다.</h5>
+              <h5>끊임없이 배우는 개발자의 영역에서 새로운 역량을 키워낼 것입니다.</h5></div>
 
           </div>
 

@@ -86,7 +86,6 @@
   }
 }
 
-
 .about-cover-line-box2 {
   position: absolute;
   top: 50%;
@@ -115,6 +114,7 @@
     left: 0;
   }
 }
+
 
 
 /* 버튼 강조 원 */
@@ -271,23 +271,16 @@
   }
 }
 
-/* @keyframes linebtn {
-  0% {
-    opacity: 0%;
-  }
-  80% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-} */
-#line-btn1:checked ~ .about-cover-line-box2 {
-  left: 15%;
-  transition: 2.5s;
-}
+
+
+
+/* 버튼 체크 효과 */
 #line-btn1:checked ~ .about-cover-line-box {
   left: 55%;
+  transition: 2.5s;
+}
+#line-btn1:checked ~ .about-cover-line-box2 {
+  left: 15%;
   transition: 2.5s;
 }
 
@@ -315,13 +308,13 @@
   }
 }
 #line-btn1:checked ~ .about-cover-line-box2 .about-cover-line2 {
-  animation: linewidth1 3s ease;
+  animation: linewidth1 2.5s ease;
 }
 @keyframes linewidth1 {
   0% {
     width: 4vmax;
   }
-  50% {
+  40% {
     width: 7vmax;
   }
   100% {
@@ -370,17 +363,6 @@
   width: 100%;
   animation: linemove3 5s ease;
 }
-/* @keyframes appearline {
-  0% {
-    width: 0%;
-  }
-  10% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-} */
 #line-btn2:checked ~ .about-cover-line-box2 .about-cover-line2 {
   animation: linewidth2 3s ease;
 }

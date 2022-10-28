@@ -27,7 +27,7 @@
   display: block;
   /* overflow: hidden; */
   filter: brightness(55%);
-  z-index: 5;
+  z-index: 2;
 }
 .main-cover-imgbox2 img {
   position: absolute;
@@ -109,6 +109,12 @@
   font-family: 'ONE-Mobile-Title';
   font-weight: 100;
   font-size: calc(1.25vmax + 4px);
+}
+.main-cover-box h5 {
+  font-family: 'ONE-Mobile-Title';
+  font-size: calc(.8vmax + 2px);
+  font-weight: 100;
+  color: #eeeeee;
 }
 
 .main-cover-sub {
@@ -237,3 +243,31 @@
 }
 
 
+.main-cover-content2 {
+  /* background-color: #ffffff; */
+  position: absolute;
+  /* top: .2vmax;
+  left: calc(9vmax + 30px); */
+  top: calc(5vmax + 20px);
+  left: 0;
+  display: block;
+  width: calc(15vmax + 30px);
+  height: calc(6vmax + 20px);
+}
+.main-cover-content2 h5{
+  animation: mainh5 6.5s ease;
+}
+@keyframes mainh5 {
+  0% {
+    opacity: 0%;
+    transform: translate(-.5vmax);
+  }
+  80% {
+    opacity: 0%;
+    transform: translate(-.5vmax);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}

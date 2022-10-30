@@ -67,7 +67,7 @@ export default function Main() {
               <h5>끊임없이 배우는 개발자의 영역에서 새로운 역량을 키워낼 것입니다.</h5></div>
 
           </div>
-          <Link to='/About'>
+          <Link to='/About' id='toabout'>
             <div className='toabout-box'></div>
           </Link>
 

@@ -27,7 +27,7 @@
   display: block;
   /* overflow: hidden; */
   filter: brightness(55%);
-  z-index: 2;
+  z-index: 1;
 }
 .main-cover-imgbox2 img {
   position: absolute;
@@ -283,7 +283,7 @@
   rotate: 90deg;
   position: absolute;
   top: 85%;
-  left: 50%;
+  left: 90%;
   transform: translate(0, 50%);
   display: block;
   width: 4vmax;
@@ -300,5 +300,22 @@
   100% {
     transform: translate(1vmax, 50%);
     opacity: 0%;
+  }
+}
+
+#toabout {
+  display: block;
+  z-index: 9;
+  animation: wait 6.5s ease;
+}
+@keyframes wait {
+  0% {
+    opacity: 0%;
+  }
+  98% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }

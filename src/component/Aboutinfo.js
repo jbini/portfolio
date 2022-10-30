@@ -3,6 +3,7 @@ import main2 from '../img/main2.jpg'
 import main2me from '../img/main2-2.jpg'
 import left from '../img/left.jpg'
 import right from '../img/right.jpg'
+import {Link} from 'react-router-dom';
 
 
 let mainimg = main2
@@ -50,6 +51,10 @@ export default function Aboutinfo() {
               <h4>출구는 오른쪽입니다.</h4>
             </div>
           </div>
+
+          <Link to='/Project' id='toproject'>
+            <div className='toproject-box'></div>
+          </Link>
 
         </div>
     );

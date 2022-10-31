@@ -38,17 +38,24 @@ export default function Aboutinfo() {
 
           <div className='about-line1'>
             <div className='line-move'>
-              <h4>오늘 아침 메뉴는 김치볶음입니다.</h4>
+              <h4>"낯선 영역은 기회다."</h4>
             </div>
           </div>
           <div className='about-line2'>
             <div className='line-move'>
-              <h4>맛있는 식사하시길 바랍니다.</h4>
+              <h5>아직 작성중아직 작성중아직 작성중아직 작성중아직 작성중</h5>
+              <h5>그아직 작성중아직 작성중아직 작성중아직 작성중아직 작성중</h5>
+              <h5>모든 프아직 작성중아직 작성중아직 작성중</h5>
+              <h5>그 말은아직 작성중아직 작성중아직 작성중다.</h5>
+              <h5>코아직 작성중 방식이 있었고,아직 작성중고아직 작성중니다.</h5>
+              <h5>전아직 작성중아아직 작성중아직 작성아직 작성중</h5>
+              <h5>유추아직 작성중아직 작성중아직 작성중</h5>
+              <h5>모아직 작성중들 아직 작성중아직 작성중다.</h5>
             </div>
           </div>
           <div className='about-line3'>
             <div className='line-move'>
-              <h4>출구는 오른쪽입니다.</h4>
+              {/* <h5>그 말은 저에게 작은 흥미를 주었고,코딩 입문에 필요한 것은 작은 흥미로 충분했습니다.</h5> */}
             </div>
           </div>
 

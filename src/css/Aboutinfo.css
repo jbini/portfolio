@@ -17,6 +17,14 @@
   font-size: calc(.9vmax + 15px);
   color: #ececec;
 }
+.about-cover-container h5 {
+  display: block;
+  margin: 0;
+  font-family: 'ONE-Mobile-Title';
+  font-size: calc(.8vmax + 2px);
+  font-weight: 100;
+  color: #ececec;
+}
 .about-cover-imgbox {
   position: relative;
   display: block;
@@ -383,8 +391,8 @@
 /* 컨텐츠 라인 */
 .about-line1 {
   position: absolute;
-  top: calc(3vmax + 60px);
-  left: 10%;
+  top: calc(6vmax + 60px);
+  left: 0%;
   display: block;
   width: 64.5%;
   height: calc(1.5vmax + 30px);
@@ -392,22 +400,25 @@
   overflow: hidden;
 }
 .about-line2 {
+  background-color: #e59191;
   position: absolute;
-  top: calc(4.5vmax + 90px);
-  left: 10%;
+  top: calc(7.5vmax + 90px);
+  left: 0%;
   display: block;
   width: 62.5%;
-  height: calc(1.5vmax + 30px);
+  height: calc(6.4vmax + 34px);
+  min-height: 96px;
   z-index: 4;
   overflow: hidden;
 }
 .about-line3 {
   position: absolute;
-  top: calc(6vmax + 120px);
-  left: 10%;
+  top: calc(13.9vmax + 124px);
+  left: 0%;
   display: block;
   width: 60%;
-  height: calc(1.5vmax + 30px);
+  height: calc(6.4vmax + 34px);
+  min-height: 96px;
   z-index: 4;
   overflow: hidden;
 }

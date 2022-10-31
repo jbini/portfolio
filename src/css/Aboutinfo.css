@@ -277,24 +277,24 @@
 /* 버튼 체크 효과 */
 #line-btn1:checked ~ .about-cover-line-box {
   left: 55%;
-  transition: 2.5s;
+  transition: 2.2s;
 }
 #line-btn1:checked ~ .about-cover-line-box2 {
   left: 15%;
-  transition: 2.5s;
+  transition: 2.2s;
 }
 
 #line-btn1:checked ~ .about-line1 .line-move {
   width: 0%;
-  animation: removeline 2s ease;
+  animation: removeline 1.9s ease;
 }
 #line-btn1:checked ~ .about-line2 .line-move {
   width: 0%;
-  animation: removeline 2s ease;
+  animation: removeline 1.9s ease;
 }
 #line-btn1:checked ~ .about-line3 .line-move {
   width: 0%;
-  animation: removeline 2s ease;
+  animation: removeline 1.7s ease;
 }
 @keyframes removeline {
   0% {
@@ -315,7 +315,7 @@
     width: 4vmax;
   }
   40% {
-    width: 7vmax;
+    width: 10vmax;
   }
   100% {
     width: 4vmax;

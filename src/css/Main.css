@@ -84,6 +84,12 @@
 } */
 
 
+/* 텍스트 그라데이션 */
+  /* background: linear-gradient(to right, #ffffff, rgb(101, 240, 159),5%, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+
 
   /* 텍스트 박스 */
 .main-cover-box {

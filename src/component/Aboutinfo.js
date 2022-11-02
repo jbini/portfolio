@@ -43,19 +43,47 @@ export default function Aboutinfo() {
           </div>
           <div className='about-line2'>
             <div className='line-move'>
-              <h5>아직 작성중아직 작성중아직 작성중아직 작성중아직 작성중</h5>
-              <h5>그아직 작성중아직 작성중아직 작성중아직 작성중아직 작성중</h5>
-              <h5>모든 프아직 작성중아직 작성중아직 작성중</h5>
-              <h5>그 말은아직 작성중아직 작성중아직 작성중다.</h5>
-              <h5>코아직 작성중 방식이 있었고,아직 작성중고아직 작성중니다.</h5>
-              <h5>전아직 작성중아아직 작성중아직 작성아직 작성중</h5>
-              <h5>유추아직 작성중아직 작성중아직 작성중</h5>
-              <h5>모아직 작성중들 아직 작성중아직 작성중다.</h5>
+              <h5>언뜻 봐서는 알 수 없는 문자들의 나열로</h5>
             </div>
           </div>
           <div className='about-line3'>
             <div className='line-move'>
-              {/* <h5>그 말은 저에게 작은 흥미를 주었고,코딩 입문에 필요한 것은 작은 흥미로 충분했습니다.</h5> */}
+              <h5>온갖 프로그램을 만들 수 있는 것이 흥미로웠습니다.</h5>
+            </div>
+          </div>
+          <div className='about-line4'>
+            <div className='line-move'>
+              <h5>개발자 입문에 필요한 것은 작은 흥미로 충분했습니다.</h5>
+            </div>
+          </div>
+          <div className='about-line5'>
+            <div className='line-move'>
+              <h5>배우고 보니 개발자의 영향은 보이는 곳마다 있었습니다.</h5>
+            </div>
+          </div>
+          <div className='about-line6'>
+            <div className='line-move'>
+              <h5>일상 중에도 웹 페이지가 나타나는 방식과</h5>
+            </div>
+          </div>
+          <div className='about-line7'>
+            <div className='line-move'>
+              <h5>애플리케이션의 구조에 관심이 생겼습니다.</h5>
+            </div>
+          </div>
+          <div className='about-line8'>
+            <div className='line-move'>
+              <h5>아쉬운 부분을 발견하면 대안을 유추해보며 배움을 얻었습니다.</h5>
+            </div>
+          </div>
+          <div className='about-line9'>
+            <div className='line-move'>
+              <h5>배우면 배울수록 익숙한 것들의 안쪽은 낯설었습니다.</h5>
+            </div>
+          </div>
+          <div className='about-line10'>
+            <div className='line-move'>
+              <h5>배운 개발자로서 깊게 보는 눈을 갖겠습니다.</h5>
             </div>
           </div>
 

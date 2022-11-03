@@ -83,13 +83,18 @@ export default function Aboutinfo() {
           </div>
           <div className='about-line10'>
             <div className='line-move'>
-              <h5>배운 개발자로서 깊게 보는 눈을 갖겠습니다.</h5>
+              <h5>새로움을 찾는 개발자로서 깊게 보는 눈을 갖겠습니다.</h5>
             </div>
           </div>
 
 
           <div className='about-second-box'>
             <h4>"두번째 컨텐츠"</h4>
+            <div className='about-second-line1'>
+              <h5>코딩은 같은 결과를 내더라도 다양한 방식이 있고</h5>
+              <h5>더 좋은 효율과 편의성을 위한 방식들이 새로 생기고 있습니다.</h5>
+              <h5>그렇기에 생산성이 좋은 개발자가 되기 위해선 배움의 자세가 필수적입니다.</h5>
+            </div>
           </div>
 
           <Link to='/Project' id='toproject'>

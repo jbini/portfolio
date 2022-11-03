@@ -162,7 +162,7 @@
   z-index: 4;
 }
 .about-underline {
-  background-color: cornflowerblue;
+  background-color: #379dfc;
   position: absolute;
   left: calc(.3vmax + 4px);
   bottom: 0.0vmax;
@@ -370,6 +370,13 @@
   display: block;
   opacity: 0%;
 }
+.about-second-line1 {
+  position: absolute;
+  top: calc(2vmax + 20px);
+  left: calc(-3vmax - 20px);
+  display: block;
+  width: calc(22vmax + 170px);
+}
 
 
 
@@ -442,12 +449,23 @@
 
 /* 버튼1 체크 효과 */
 #line-btn1:checked ~ .about-cover-line-box {
-  left: 55%;
+  left: 60%;
   transition: 2.2s;
 }
 #line-btn1:checked ~ .about-cover-line-box2 {
   left: 12%;
   transition: 2.2s;
+}
+#line-btn1:checked ~ .about-line1 .line-move .about-underline {
+  animation: aboutunderlinekeep 2s ease;
+}
+@keyframes aboutunderlinekeep {
+  0% {
+    width: calc(1.6vmax + 31px);
+  }
+  100% {
+    width: calc(1.6vmax + 31px);
+  }
 }
 
 #line-btn1:checked ~ .about-line1 .line-move {
@@ -538,16 +556,17 @@
 
 #line-btn1:checked ~ .about-second-box {
   opacity: 100%;
-  animation: secondbox 3.2s ease;
+  animation: secondbox 4.2s ease;
 }
 @keyframes secondbox {
   0% {
     filter: blur(3px);
     opacity: 0%;
   }
-  85% {
+  75% {
     filter: blur(3px);
     opacity: 0%;
+    transform: translate(-1vmax, -1vmax);
   }
   100% {
     filter: blur(0px);
@@ -571,7 +590,7 @@
   transition-delay: .5s;
 }
 #line-btn2:checked ~ .about-line1 .line-move .about-underline {
-  animation: aboutunderline2 5s ease;
+  animation: aboutunderline2 6s ease;
 }
 @keyframes aboutunderline2 {
   0% {

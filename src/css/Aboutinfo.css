@@ -36,6 +36,19 @@
   position: absolute;
   bottom: -105vh;
   width: 100%;
+  /* filter: blur(2px);
+  animation: blur2 2s ease; */
+}
+@keyframes blur2 {
+  0% {
+    filter: blur(0px);
+  }
+  70% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(2px);
+  }
 }
 
 .about-cover-imgbox2 {
@@ -139,6 +152,38 @@
   z-index: 4;
   overflow: hidden;
 }
+.relative-div {
+  position: relative;
+  display: inline-block;
+}
+#underline-h4-2 {
+  position: relative;
+  margin-left: calc(.3vmax + 5px);
+  z-index: 4;
+}
+.about-underline {
+  background-color: cornflowerblue;
+  position: absolute;
+  left: calc(.3vmax + 4px);
+  bottom: 0.0vmax;
+  display: inline-block;
+  width: calc(1.6vmax + 31px);
+  height: calc(0.2vmax + 4px);
+  z-index: 3;
+  animation: aboutunderline 6s ease;
+}
+@keyframes aboutunderline {
+  0% {
+    width: 0px;
+  }
+  80% {
+    width: 0px;
+  }
+  100% {
+    width: calc(1.6vmax + 31px);
+  }
+}
+
 .about-line2 {
   position: absolute;
   top: calc(7.5vmax + 90px);
@@ -322,116 +367,11 @@
   position: absolute;
   top: 20%;
   left: calc(23% + 10vmax);
-  display: none;
-}
-@keyframes secondbox {
-  0% {
-    filter: blur(3px);
-    opacity: 0%;
-  }
-  80% {
-    filter: blur(3px);
-    opacity: 0%;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 100%;
-  }
-}
-
-
-
-
-
-/* 버튼 강조 원 */
-.line-btn-click1 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
   display: block;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
   opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 5s infinite;
 }
-.line-btn-click2 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
-  display: block;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 5.5s infinite;
-}
-.line-btn-click3 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
-  display: none;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 4s infinite;
-}
-.line-btn-click4 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
-  display: none;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 4.5s infinite;
-}
-@keyframes click1 {
-  0% {
-      width: 4vmax;
-      height: 4vmax;
-      opacity: 0%;
-  }
-  21% {
-      width: 4vmax;
-      height: 4vmax;
-      opacity: 0%;
-  }
-  22% {
-      width: 4vmax;
-      height: 4vmax;
-      opacity: 70%;
-  }
-  30% {
-      width: 5.3vmax;
-      height: 5.3vmax;
-      opacity: 20%;
-  }
-  70% {
-      width: 5.4vmax;
-      height: 5.4vmax;
-      opacity: 0%;
-  }
-  100% {
-      width: 5vmax;
-      height: 5vmax;
-      opacity: 0%;
-  }
-}
+
+
 
 
 
@@ -597,8 +537,22 @@
 
 
 #line-btn1:checked ~ .about-second-box {
-  display: block;
-  animation: secondbox 3.5s ease;
+  opacity: 100%;
+  animation: secondbox 3.2s ease;
+}
+@keyframes secondbox {
+  0% {
+    filter: blur(3px);
+    opacity: 0%;
+  }
+  85% {
+    filter: blur(3px);
+    opacity: 0%;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 100%;
+  }
 }
 
 
@@ -608,13 +562,28 @@
 /* 버튼2 체크 효과 */
 #line-btn2:checked ~ .about-cover-line-box2 {
   left: 55%;
-  transition: 2s;
+  transition: 1.4s;
+  transition-delay: .5s;
 }
 #line-btn2:checked ~ .about-cover-line-box {
   left: 50%;
-  transition: 2s;
+  transition: 1.4s;
+  transition-delay: .5s;
 }
-
+#line-btn2:checked ~ .about-line1 .line-move .about-underline {
+  animation: aboutunderline2 5s ease;
+}
+@keyframes aboutunderline2 {
+  0% {
+    width: 0px;
+  }
+  80% {
+    width: 0px;
+  }
+  100% {
+    width: calc(1.6vmax + 31px);
+  }
+}
 #line-btn2:checked ~ .about-line1 .line-move {
   width: 100%;
   animation: linemove 5s ease;
@@ -667,6 +636,112 @@
   }
 }
 
+#line-btn2:checked ~ .about-second-box {
+  opacity: 0%;
+  animation: secondbox2 1s ease;
+}
+@keyframes secondbox2 {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    filter: blur(3px);
+    opacity: 0%;
+  }
+}
+
+
+
+
+/* 버튼 강조 원 */
+.line-btn-click1 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5s infinite;
+}
+.line-btn-click2 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5.5s infinite;
+}
+.line-btn-click3 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 4s infinite;
+}
+.line-btn-click4 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 4.5s infinite;
+}
+@keyframes click1 {
+  0% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 0%;
+  }
+  21% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 0%;
+  }
+  22% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 70%;
+  }
+  30% {
+      width: 5.3vmax;
+      height: 5.3vmax;
+      opacity: 20%;
+  }
+  70% {
+      width: 5.4vmax;
+      height: 5.4vmax;
+      opacity: 0%;
+  }
+  100% {
+      width: 5vmax;
+      height: 5vmax;
+      opacity: 0%;
+  }
+}
 
 
 

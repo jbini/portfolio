@@ -38,7 +38,7 @@ export default function Aboutinfo() {
 
           <div className='about-line1'>
             <div className='line-move'>
-              <h4>"낯선 영역은 기회다."</h4>
+              <h4>"낯선 영역은</h4><div className='relative-div'><div className='about-underline'></div><h4 id='underline-h4-2'>기회</h4></div><h4>다."</h4>
             </div>
           </div>
           <div className='about-line2'>

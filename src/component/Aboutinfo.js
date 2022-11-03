@@ -38,7 +38,7 @@ export default function Aboutinfo() {
 
           <div className='about-line1'>
             <div className='line-move'>
-              <h4>"낯선 영역은</h4><div className='relative-div'><div className='about-underline'></div><h4 id='underline-h4-2'>기회</h4></div><h4>다."</h4>
+              <h4>"낯선 영역은</h4><div className='relative-div'><div className='about-underline'></div><h4 id='underline-h4-2'>기회다."</h4></div>
             </div>
           </div>
           <div className='about-line2'>
@@ -96,6 +96,11 @@ export default function Aboutinfo() {
               <h5>그렇기에 생산성이 좋은 개발자가 되기 위해선 배움의 자세가 필수적입니다.</h5>
             </div>
           </div>
+
+
+          <Link to='/Main' id='tomain'>
+            <div className='tomain-box'></div>
+          </Link>
 
           <Link to='/Project' id='toproject'>
             <div className='toproject-box'></div>

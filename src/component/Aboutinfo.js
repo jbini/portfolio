@@ -87,6 +87,11 @@ export default function Aboutinfo() {
             </div>
           </div>
 
+
+          <div className='about-second-box'>
+            <h4>"두번째 컨텐츠"</h4>
+          </div>
+
           <Link to='/Project' id='toproject'>
             <div className='toproject-box'></div>
           </Link>

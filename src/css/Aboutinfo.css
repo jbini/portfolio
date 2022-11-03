@@ -127,324 +127,6 @@
 
 
 
-/* 버튼 강조 원 */
-.line-btn-click1 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
-  display: block;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 5s infinite;
-}
-.line-btn-click2 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
-  display: block;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 5.5s infinite;
-}
-.line-btn-click3 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
-  display: none;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 4s infinite;
-}
-.line-btn-click4 {
-  position: absolute;
-  top: 0vmax;
-  left: 2vmax;
-  display: none;
-  width: 4vmax;
-  height: 4vmax;
-  border: rgb(255, 255, 255) solid 4px;
-  border-radius: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0%;
-  z-index: 6;
-  animation: click1 2s 4.5s infinite;
-}
-@keyframes click1 {
-  0% {
-      width: 4vmax;
-      height: 4vmax;
-      opacity: 0%;
-  }
-  21% {
-      width: 4vmax;
-      height: 4vmax;
-      opacity: 0%;
-  }
-  22% {
-      width: 4vmax;
-      height: 4vmax;
-      opacity: 70%;
-  }
-  30% {
-      width: 5.3vmax;
-      height: 5.3vmax;
-      opacity: 20%;
-  }
-  70% {
-      width: 5.4vmax;
-      height: 5.4vmax;
-      opacity: 0%;
-  }
-  100% {
-      width: 5vmax;
-      height: 5vmax;
-      opacity: 0%;
-  }
-}
-
-
-
-/* 라인 버튼 */
-.line-button1 {
-  background-image: url(../img/left.jpg);
-  background-size: 4vmax;
-  position: absolute;
-  top: -2vmax;
-  left: -.3vmax;
-  display: block;
-  width: 4vmax;
-  height: 4vmax;
-  z-index: 7;
-  cursor: pointer;
-  scale: 0%;
-  animation: arrowmove 2s 5s ease infinite;
-}
-.line-button2 {
-  background-image: url(../img/right.jpg);
-  background-size: 4vmax;
-  position: absolute;
-  top: -2vmax;
-  left: .2vmax;
-  display: none;
-  width: 4vmax;
-  height: 4vmax;
-  z-index: 7;
-  cursor: pointer;
-  scale: 0%;
-  animation: arrowmove 2s 4s ease infinite;
-}
-@keyframes arrowmove {
-  0% {
-    scale: 100%;
-  }
-  20% {
-    scale: 100%;
-  }
-  24% {
-    scale: 117%;
-  }
-  30% {
-    scale: 120%;
-  }
-  42% {
-    scale: 100%;
-  }
-  44% {
-    scale: 100%;
-  }
-  48% {
-    scale: 115%;
-  }
-  54% {
-    scale: 120%;
-  }
-  66% {
-    scale: 100%;
-  }
-  100% {
-    scale: 100%;
-  }
-}
-
-
-
-
-/* 버튼 체크 효과 */
-#line-btn1:checked ~ .about-cover-line-box {
-  left: 55%;
-  transition: 2.2s;
-}
-#line-btn1:checked ~ .about-cover-line-box2 {
-  left: 12%;
-  transition: 2.2s;
-}
-
-#line-btn1:checked ~ .about-line1 .line-move {
-  width: 0%;
-  animation: removeline 1.9s ease;
-}
-#line-btn1:checked ~ .about-line2 .line-move {
-  width: 0%;
-  animation: removeline 1.9s ease;
-}
-#line-btn1:checked ~ .about-line3 .line-move {
-  width: 0%;
-  animation: removeline 1.7s ease;
-}
-#line-btn1:checked ~ .about-line4 .line-move {
-  width: 0%;
-  animation: removeline 1.7s ease;
-}
-#line-btn1:checked ~ .about-line5 .line-move {
-  width: 0%;
-  animation: removeline 1.7s ease;
-}
-#line-btn1:checked ~ .about-line6 .line-move {
-  width: 0%;
-  animation: removeline 1.6s ease;
-}
-#line-btn1:checked ~ .about-line7 .line-move {
-  width: 0%;
-  animation: removeline 1.6s ease;
-}
-#line-btn1:checked ~ .about-line8 .line-move {
-  width: 0%;
-  animation: removeline 1.5s ease;
-}
-#line-btn1:checked ~ .about-line9 .line-move {
-  width: 0%;
-  animation: removeline 1.4s ease;
-}
-#line-btn1:checked ~ .about-line10 .line-move {
-  width: 0%;
-  animation: removeline 1.4s ease;
-}
-@keyframes removeline {
-  0% {
-    width: 70%;
-  }
-  98% {
-    width: 0%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-#line-btn1:checked ~ .about-cover-line-box2 .about-cover-line2 {
-  animation: linewidth1 2.5s ease;
-}
-@keyframes linewidth1 {
-  0% {
-    width: 4vmax;
-  }
-  40% {
-    width: 10vmax;
-  }
-  100% {
-    width: 4vmax;
-  }
-}
-
-#line-btn1:checked ~ .about-cover-line-box2 .line-button1 {
-  display: none;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click1 {
-  display: none;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click2 {
-  display: none;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-button2 {
-  display: block;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click3 {
-  display: block;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click4 {
-  display: block;
-}
-
-
-#line-btn2:checked ~ .about-cover-line-box2 {
-  left: 55%;
-  transition: 2s;
-}
-#line-btn2:checked ~ .about-cover-line-box {
-  left: 50%;
-  transition: 2s;
-}
-
-#line-btn2:checked ~ .about-line1 .line-move {
-  width: 100%;
-  animation: linemove 5s ease;
-}
-#line-btn2:checked ~ .about-line2 .line-move {
-  width: 100%;
-  animation: linemove3 5s ease;
-}
-#line-btn2:checked ~ .about-line3 .line-move {
-  width: 100%;
-  animation: linemove3 5.1s ease;
-}
-#line-btn2:checked ~ .about-line4 .line-move {
-  width: 100%;
-  animation: linemove3 5.2s ease;
-}
-#line-btn2:checked ~ .about-line5 .line-move {
-  width: 100%;
-  animation: linemove3 5.3s ease;
-}
-#line-btn2:checked ~ .about-line6 .line-move {
-  width: 100%;
-  animation: linemove3 5.4s ease;
-}
-#line-btn2:checked ~ .about-line7 .line-move {
-  width: 100%;
-  animation: linemove3 5.5s ease;
-}
-#line-btn2:checked ~ .about-line8 .line-move {
-  width: 100%;
-  animation: linemove3 5.6s ease;
-}
-#line-btn2:checked ~ .about-line9 .line-move {
-  width: 100%;
-  animation: linemove3 5.7s ease;
-}
-#line-btn2:checked ~ .about-line10 .line-move {
-  width: 100%;
-  animation: linemove3 5.8s ease;
-}
-#line-btn2:checked ~ .about-cover-line-box2 .about-cover-line2 {
-  animation: linewidth2 3s ease;
-}
-@keyframes linewidth2 {
-  0% {
-    width: 4vmax;
-  }
-  100% {
-    width: 4vmax;
-  }
-}
-
-
-
-
-
 
 /* 컨텐츠 라인 */
 .about-line1 {
@@ -632,6 +314,362 @@
     translate: 0%;
   }
 }
+
+
+
+/* 두번째 컨텐츠 */
+.about-second-box {
+  position: absolute;
+  top: 20%;
+  left: calc(23% + 10vmax);
+  display: none;
+}
+@keyframes secondbox {
+  0% {
+    filter: blur(3px);
+    opacity: 0%;
+  }
+  80% {
+    filter: blur(3px);
+    opacity: 0%;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 100%;
+  }
+}
+
+
+
+
+
+/* 버튼 강조 원 */
+.line-btn-click1 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5s infinite;
+}
+.line-btn-click2 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5.5s infinite;
+}
+.line-btn-click3 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 4s infinite;
+}
+.line-btn-click4 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 4.5s infinite;
+}
+@keyframes click1 {
+  0% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 0%;
+  }
+  21% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 0%;
+  }
+  22% {
+      width: 4vmax;
+      height: 4vmax;
+      opacity: 70%;
+  }
+  30% {
+      width: 5.3vmax;
+      height: 5.3vmax;
+      opacity: 20%;
+  }
+  70% {
+      width: 5.4vmax;
+      height: 5.4vmax;
+      opacity: 0%;
+  }
+  100% {
+      width: 5vmax;
+      height: 5vmax;
+      opacity: 0%;
+  }
+}
+
+
+
+/* 라인 버튼 */
+.line-button1 {
+  background-image: url(../img/left.jpg);
+  background-size: 4vmax;
+  position: absolute;
+  top: -2vmax;
+  left: -.3vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 7;
+  cursor: pointer;
+  scale: 0%;
+  animation: arrowmove 2s 5s ease infinite;
+}
+.line-button2 {
+  background-image: url(../img/right.jpg);
+  background-size: 4vmax;
+  position: absolute;
+  top: -2vmax;
+  left: .2vmax;
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 7;
+  cursor: pointer;
+  scale: 0%;
+  animation: arrowmove 2s 4s ease infinite;
+}
+@keyframes arrowmove {
+  0% {
+    scale: 100%;
+  }
+  20% {
+    scale: 100%;
+  }
+  24% {
+    scale: 117%;
+  }
+  30% {
+    scale: 120%;
+  }
+  42% {
+    scale: 100%;
+  }
+  44% {
+    scale: 100%;
+  }
+  48% {
+    scale: 115%;
+  }
+  54% {
+    scale: 120%;
+  }
+  66% {
+    scale: 100%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+
+
+
+/* 버튼1 체크 효과 */
+#line-btn1:checked ~ .about-cover-line-box {
+  left: 55%;
+  transition: 2.2s;
+}
+#line-btn1:checked ~ .about-cover-line-box2 {
+  left: 12%;
+  transition: 2.2s;
+}
+
+#line-btn1:checked ~ .about-line1 .line-move {
+  width: 0%;
+  animation: removeline 1.9s ease;
+}
+#line-btn1:checked ~ .about-line2 .line-move {
+  width: 0%;
+  animation: removeline 1.9s ease;
+}
+#line-btn1:checked ~ .about-line3 .line-move {
+  width: 0%;
+  animation: removeline 1.7s ease;
+}
+#line-btn1:checked ~ .about-line4 .line-move {
+  width: 0%;
+  animation: removeline 1.7s ease;
+}
+#line-btn1:checked ~ .about-line5 .line-move {
+  width: 0%;
+  animation: removeline 1.7s ease;
+}
+#line-btn1:checked ~ .about-line6 .line-move {
+  width: 0%;
+  animation: removeline 1.6s ease;
+}
+#line-btn1:checked ~ .about-line7 .line-move {
+  width: 0%;
+  animation: removeline 1.6s ease;
+}
+#line-btn1:checked ~ .about-line8 .line-move {
+  width: 0%;
+  animation: removeline 1.5s ease;
+}
+#line-btn1:checked ~ .about-line9 .line-move {
+  width: 0%;
+  animation: removeline 1.4s ease;
+}
+#line-btn1:checked ~ .about-line10 .line-move {
+  width: 0%;
+  animation: removeline 1.4s ease;
+}
+@keyframes removeline {
+  0% {
+    width: 70%;
+  }
+  98% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+#line-btn1:checked ~ .about-cover-line-box2 .about-cover-line2 {
+  animation: linewidth1 2.5s ease;
+}
+@keyframes linewidth1 {
+  0% {
+    width: 4vmax;
+  }
+  40% {
+    width: 10vmax;
+  }
+  100% {
+    width: 4vmax;
+  }
+}
+
+#line-btn1:checked ~ .about-cover-line-box2 .line-button1 {
+  display: none;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click1 {
+  display: none;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click2 {
+  display: none;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-button2 {
+  display: block;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click3 {
+  display: block;
+}
+#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click4 {
+  display: block;
+}
+
+
+#line-btn1:checked ~ .about-second-box {
+  display: block;
+  animation: secondbox 3.5s ease;
+}
+
+
+
+
+
+/* 버튼2 체크 효과 */
+#line-btn2:checked ~ .about-cover-line-box2 {
+  left: 55%;
+  transition: 2s;
+}
+#line-btn2:checked ~ .about-cover-line-box {
+  left: 50%;
+  transition: 2s;
+}
+
+#line-btn2:checked ~ .about-line1 .line-move {
+  width: 100%;
+  animation: linemove 5s ease;
+}
+#line-btn2:checked ~ .about-line2 .line-move {
+  width: 100%;
+  animation: linemove3 5s ease;
+}
+#line-btn2:checked ~ .about-line3 .line-move {
+  width: 100%;
+  animation: linemove3 5.1s ease;
+}
+#line-btn2:checked ~ .about-line4 .line-move {
+  width: 100%;
+  animation: linemove3 5.2s ease;
+}
+#line-btn2:checked ~ .about-line5 .line-move {
+  width: 100%;
+  animation: linemove3 5.3s ease;
+}
+#line-btn2:checked ~ .about-line6 .line-move {
+  width: 100%;
+  animation: linemove3 5.4s ease;
+}
+#line-btn2:checked ~ .about-line7 .line-move {
+  width: 100%;
+  animation: linemove3 5.5s ease;
+}
+#line-btn2:checked ~ .about-line8 .line-move {
+  width: 100%;
+  animation: linemove3 5.6s ease;
+}
+#line-btn2:checked ~ .about-line9 .line-move {
+  width: 100%;
+  animation: linemove3 5.7s ease;
+}
+#line-btn2:checked ~ .about-line10 .line-move {
+  width: 100%;
+  animation: linemove3 5.8s ease;
+}
+#line-btn2:checked ~ .about-cover-line-box2 .about-cover-line2 {
+  animation: linewidth2 3s ease;
+}
+@keyframes linewidth2 {
+  0% {
+    width: 4vmax;
+  }
+  100% {
+    width: 4vmax;
+  }
+}
+
+
+
+
 
 
 

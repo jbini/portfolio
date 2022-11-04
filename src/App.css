@@ -63,4 +63,10 @@ h5 {
 }
 
 
-
+.app-container {
+  position: absolute;
+  left: calc(15vmax + 50px);
+  display: block;
+  width: calc(85vmax - 50px);
+  height: 300vh;
+}

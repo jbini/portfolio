@@ -16,18 +16,22 @@
   /* overflow: hidden; */
   opacity: 30%;
 }
-  
 .project-cover-imgbox img {
   position: absolute;
   bottom: -100vh;
   width: 100%;
 }
-@media screen and (max-width: 1350px) {
-  .project-cover-container .project-cover-imgbox img {
-    position: absolute;
-    bottom: -100vh;
-    width: 100%;
-  }
+
+.project-cover-imgbox2 {
+  position: relative;
+  display: block;
+  /* overflow: hidden; */
+  filter: brightness(55%);
+  z-index: 1;
+  user-select: none;
 }
-
-
+.project-cover-imgbox2 img {
+  position: absolute;
+  bottom: -100vh;
+  width: 100%;
+}

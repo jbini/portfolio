@@ -35,3 +35,49 @@
   bottom: -100vh;
   width: 100%;
 }
+
+
+/* 페이지 이동 화살표 */
+.tomain-box {
+  background-image: url(../img/left.jpg);
+  background-size: 4vmax;
+  rotate: 90deg;
+  position: absolute;
+  top: calc(15% - 4vmax);
+  left: 90%;
+  transform: translate(0, 50%);
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 10;
+}
+.tomain-box:hover {
+  animation: uparrow 1s ease infinite;
+}
+@keyframes uparrow {
+  0% {
+    transform: translate(0, 50%);
+  }
+  100% {
+    transform: translate(-1vmax, 50%);
+    opacity: 0%;
+  }
+}
+
+#tomain {
+  display: block;
+  z-index: 9;
+  animation: wait 6.5s ease;
+}
+@keyframes wait {
+  0% {
+    opacity: 0%;
+  }
+  98% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+

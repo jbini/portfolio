@@ -53,6 +53,15 @@ h5 {
   min-height: calc(10px + 5vmin);
   overflow: hidden;
 }
+.menu-list-line h2 {
+  margin: 0;
+  text-decoration: none;
+  font-family: "RobotoB";
+  font-size: calc(1vmax + 20px);
+  color: #ececec;
+  display: inline-block;
+  cursor: pointer;
+}
 .menu-list-line a {
   margin: 0;
   text-decoration: none;
@@ -62,6 +71,9 @@ h5 {
   display: inline-block;
 }
 .menu-container:hover h4 {
+  transition: .5s;
+}
+.menu-container:hover h2 {
   transition: .5s;
 }
 .menu-container:hover a {
@@ -110,6 +122,10 @@ h5 {
 
 /* 밑줄 hover 효과 */
 .menu-list-line:hover h4 {
+  transform: translateX(2vmin);
+  transition: .2s;
+}
+.menu-list-line:hover h2 {
   transform: translateX(2vmin);
   transition: .2s;
 }

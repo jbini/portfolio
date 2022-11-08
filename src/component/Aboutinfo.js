@@ -13,12 +13,12 @@ export default function Aboutinfo() {
     return(
         <div className='about-cover-container'>
 
-          <input type='radio' name='line-radio' id='line-btn1'></input>
-          <input type='radio' name='line-radio' id='line-btn2'></input>
+          {/* <input type='radio' name='line-radio' id='line-btn1'></input>
+          <input type='radio' name='line-radio' id='line-btn2'></input> */}
 
-          <div className='about-cover-imgbox'>
+          {/* <div className='about-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>
-          </div>
+          </div> */}
           <div className='about-cover-imgbox2'>
               <img src={mainimg2} alt='mainimg2'></img>
           </div>
@@ -97,14 +97,6 @@ export default function Aboutinfo() {
             </div>
           </div>
 
-
-          <Link to='/Main' id='tomain'>
-            <div className='tomain-box'></div>
-          </Link>
-
-          <Link to='/Project' id='toproject'>
-            <div className='toproject-box'></div>
-          </Link>
 
         </div>
     );

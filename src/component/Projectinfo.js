@@ -10,13 +10,13 @@ export default function Projectinfo() {
     return(
         <div className='project-cover-container'>
 
-          <div className='project-cover-imgbox'>
+          {/* <div className='project-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>
           </div>
 
           <div className='project-cover-imgbox2'>
               <img src={mainimg2} alt='mainimg2'></img>
-          </div>
+          </div> */}
 
         </div>
     );

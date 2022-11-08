@@ -5,10 +5,12 @@
 /* 메인 배경 */
 .project-cover-container {
   position: absolute;
-  left: calc(15vmax + 50px);
+  top: 200vh;
+  left: 0;
   display: block;
   width: calc(85vmax - 50px);
   height: 100vh;
+  overflow: hidden;
 }
 .project-cover-imgbox {
   position: relative;

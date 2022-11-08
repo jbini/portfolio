@@ -1,10 +1,12 @@
 /* 메인 배경 */
 .about-cover-container {
   position: absolute;
-  left: calc(15vmax + 50px);
+  top: 100vh;
+  left: 0;
   display: block;
   width: calc(85vmax - 50px);
   height: 100vh;
+  overflow: hidden;
 }
 .about-cover-container input {
   display: none;
@@ -53,8 +55,7 @@
 
 .about-cover-imgbox2 {
   position: relative;
-  display: block;
-  /* overflow: hidden; */
+  display: none;
   filter: brightness(55%);
   z-index: 3;
   user-select: none;
@@ -63,6 +64,27 @@
   position: absolute;
   bottom: -105vh;
   width: 100%;
+}
+#MAP-about:checked ~ .app-container .about-cover-imgbox2{
+  animation: aboutimg 1.2s ease;
+  display: block;
+}
+#line-btn1:checked ~ .app-container .about-cover-imgbox2{
+  display: block;
+}
+#line-btn2:checked ~ .app-container .about-cover-imgbox2{
+  display: block;
+}
+@keyframes aboutimg {
+  0% {
+    opacity: 0%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -86,7 +108,8 @@
   left: 50%;
   display: block;
 }
-.about-cover-line {
+
+#MAP-about:checked ~ .app-container .about-cover-line {
   background-color: rgb(211, 178, 89);
   background: linear-gradient( rgb(240, 203, 101), rgb(240, 203, 101), rgb(186, 255, 201));
   position: absolute;
@@ -109,13 +132,37 @@
   }
 }
 
+#line-btn1:checked ~ .app-container .about-cover-line {
+  background-color: rgb(211, 178, 89);
+  background: linear-gradient( rgb(240, 203, 101), rgb(240, 203, 101), rgb(186, 255, 201));
+  position: absolute;
+  top: -150vmax;
+  display: block;
+  width: 2vmax;
+  height: 300vmax;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+#line-btn2:checked ~ .app-container .about-cover-line {
+  background-color: rgb(211, 178, 89);
+  background: linear-gradient( rgb(240, 203, 101), rgb(240, 203, 101), rgb(186, 255, 201));
+  position: absolute;
+  top: -150vmax;
+  display: block;
+  width: 2vmax;
+  height: 300vmax;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+
+
 .about-cover-line-box2 {
   position: absolute;
   top: 50%;
   left: 55%;
   display: block;
 }
-.about-cover-line2 {
+#MAP-about:checked ~ .app-container .about-cover-line2 {
   background-color: rgb(240, 203, 101);
   background: linear-gradient( rgb(186, 255, 201), rgb(240, 203, 101), rgb(240, 203, 101));
   position: absolute;
@@ -136,6 +183,28 @@
     top: -150vmax;
     left: 0;
   }
+}
+#line-btn1:checked ~ .app-container .about-cover-line2 {
+  background-color: rgb(240, 203, 101);
+  background: linear-gradient( rgb(186, 255, 201), rgb(240, 203, 101), rgb(240, 203, 101));
+  position: absolute;
+  top: -150vmax;
+  display: block;
+  width: 4vmax;
+  height: 300vmax;
+  transform: rotate(35deg);
+  z-index: 6;
+}
+#line-btn2:checked ~ .app-container .about-cover-line2 {
+  background-color: rgb(240, 203, 101);
+  background: linear-gradient( rgb(186, 255, 201), rgb(240, 203, 101), rgb(240, 203, 101));
+  position: absolute;
+  top: -150vmax;
+  display: block;
+  width: 4vmax;
+  height: 300vmax;
+  transform: rotate(35deg);
+  z-index: 6;
 }
 
 
@@ -161,7 +230,7 @@
   margin-left: calc(.3vmax + 5px);
   z-index: 4;
 }
-.about-underline {
+#MAP-about:checked ~ .app-container .about-underline {
   background-color: #379dfc;
   position: absolute;
   left: calc(.3vmax + 4px);
@@ -182,6 +251,27 @@
   100% {
     width: calc(1.6vmax + 31px);
   }
+}
+#line-btn1:checked ~ .app-container .about-underline {
+  background-color: #379dfc;
+  position: absolute;
+  left: calc(.3vmax + 4px);
+  bottom: 0.0vmax;
+  display: inline-block;
+  width: calc(1.6vmax + 31px);
+  height: calc(0.2vmax + 4px);
+  z-index: 0;
+}
+#line-btn2:checked ~ .app-container .about-underline {
+  background-color: #379dfc;
+  position: absolute;
+  left: calc(.3vmax + 4px);
+  bottom: 0.0vmax;
+  display: inline-block;
+  width: calc(1.6vmax + 31px);
+  height: calc(0.2vmax + 4px);
+  z-index: 0;
+  animation: aboutunderline 6s ease;
 }
 
 .about-line2 {
@@ -287,34 +377,34 @@
 }
 
 
-.about-line1 h4 {
+#MAP-about:checked ~ .app-container .about-line1 h4 {
   animation: linemove 5s  ease;
 }
-.about-line2 h5 {
+#MAP-about:checked ~ .app-container .about-line2 h5 {
   animation: linemove3 5s  ease;
 }
-.about-line3 h5 {
+#MAP-about:checked ~ .app-container .about-line3 h5 {
   animation: linemove3 5.1s  ease;
 }
-.about-line4 h5 {
+#MAP-about:checked ~ .app-container .about-line4 h5 {
   animation: linemove3 5.2s  ease;
 }
-.about-line5 h5 {
+#MAP-about:checked ~ .app-container .about-line5 h5 {
   animation: linemove3 5.3s  ease;
 }
-.about-line6 h5 {
+#MAP-about:checked ~ .app-container .about-line6 h5 {
   animation: linemove3 5.4s  ease;
 }
-.about-line7 h5 {
+#MAP-about:checked ~ .app-container .about-line7 h5 {
   animation: linemove3 5.5s  ease;
 }
-.about-line8 h5 {
+#MAP-about:checked ~ .app-container .about-line8 h5 {
   animation: linemove3 5.6s  ease;
 }
-.about-line9 h5 {
+#MAP-about:checked ~ .app-container .about-line9 h5 {
   animation: linemove3 5.7s  ease;
 }
-.about-line10 h5 {
+#MAP-about:checked ~ .app-container .about-line10 h5 {
   animation: linemove3 5.8s  ease;
 }
 @keyframes linemove {
@@ -383,7 +473,7 @@
 
 
 /* 라인 버튼 */
-.line-button1 {
+#MAP-about:checked ~ .app-container .line-button1 {
   background-image: url(../img/left.jpg);
   background-size: 4vmax;
   position: absolute;
@@ -397,7 +487,22 @@
   scale: 0%;
   animation: arrowmove 2s 5s ease infinite;
 }
-.line-button2 {
+#line-btn2:checked ~ .app-container .line-button1 {
+  background-image: url(../img/left.jpg);
+  background-size: 4vmax;
+  position: absolute;
+  top: -2vmax;
+  left: -.3vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 7;
+  cursor: pointer;
+  scale: 0%;
+  animation: arrowmove 2s 5s ease infinite;
+}
+
+#line-btn1:checked ~ .app-container .line-button2 {
   background-image: url(../img/right.jpg);
   background-size: 4vmax;
   position: absolute;
@@ -446,234 +551,8 @@
 
 
 
-
-/* 버튼1 체크 효과 */
-#line-btn1:checked ~ .about-cover-line-box {
-  left: 60%;
-  transition: 2.2s;
-}
-#line-btn1:checked ~ .about-cover-line-box2 {
-  left: 12%;
-  transition: 2.2s;
-}
-#line-btn1:checked ~ .about-line1 .line-move .about-underline {
-  animation: aboutunderlinekeep 2s ease;
-}
-@keyframes aboutunderlinekeep {
-  0% {
-    width: calc(1.6vmax + 31px);
-  }
-  100% {
-    width: calc(1.6vmax + 31px);
-  }
-}
-
-#line-btn1:checked ~ .about-line1 .line-move {
-  width: 0%;
-  animation: removeline 1.9s ease;
-}
-#line-btn1:checked ~ .about-line2 .line-move {
-  width: 0%;
-  animation: removeline 1.9s ease;
-}
-#line-btn1:checked ~ .about-line3 .line-move {
-  width: 0%;
-  animation: removeline 1.7s ease;
-}
-#line-btn1:checked ~ .about-line4 .line-move {
-  width: 0%;
-  animation: removeline 1.7s ease;
-}
-#line-btn1:checked ~ .about-line5 .line-move {
-  width: 0%;
-  animation: removeline 1.7s ease;
-}
-#line-btn1:checked ~ .about-line6 .line-move {
-  width: 0%;
-  animation: removeline 1.6s ease;
-}
-#line-btn1:checked ~ .about-line7 .line-move {
-  width: 0%;
-  animation: removeline 1.6s ease;
-}
-#line-btn1:checked ~ .about-line8 .line-move {
-  width: 0%;
-  animation: removeline 1.5s ease;
-}
-#line-btn1:checked ~ .about-line9 .line-move {
-  width: 0%;
-  animation: removeline 1.4s ease;
-}
-#line-btn1:checked ~ .about-line10 .line-move {
-  width: 0%;
-  animation: removeline 1.4s ease;
-}
-@keyframes removeline {
-  0% {
-    width: 70%;
-  }
-  98% {
-    width: 0%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-#line-btn1:checked ~ .about-cover-line-box2 .about-cover-line2 {
-  animation: linewidth1 2.5s ease;
-}
-@keyframes linewidth1 {
-  0% {
-    width: 4vmax;
-  }
-  40% {
-    width: 10vmax;
-  }
-  100% {
-    width: 4vmax;
-  }
-}
-
-#line-btn1:checked ~ .about-cover-line-box2 .line-button1 {
-  display: none;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click1 {
-  display: none;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click2 {
-  display: none;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-button2 {
-  display: block;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click3 {
-  display: block;
-}
-#line-btn1:checked ~ .about-cover-line-box2 .line-btn-click4 {
-  display: block;
-}
-
-
-#line-btn1:checked ~ .about-second-box {
-  opacity: 100%;
-  animation: secondbox 4.2s ease;
-}
-@keyframes secondbox {
-  0% {
-    filter: blur(3px);
-    opacity: 0%;
-  }
-  75% {
-    filter: blur(3px);
-    opacity: 0%;
-    transform: translate(-1vmax, -1vmax);
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 100%;
-  }
-}
-
-
-
-
-
-/* 버튼2 체크 효과 */
-#line-btn2:checked ~ .about-cover-line-box2 {
-  left: 55%;
-  transition: 1.4s;
-  transition-delay: .5s;
-}
-#line-btn2:checked ~ .about-cover-line-box {
-  left: 50%;
-  transition: 1.4s;
-  transition-delay: .5s;
-}
-#line-btn2:checked ~ .about-line1 .line-move .about-underline {
-  animation: aboutunderline2 6s ease;
-}
-@keyframes aboutunderline2 {
-  0% {
-    width: 0px;
-  }
-  80% {
-    width: 0px;
-  }
-  100% {
-    width: calc(1.6vmax + 31px);
-  }
-}
-#line-btn2:checked ~ .about-line1 .line-move {
-  width: 100%;
-  animation: linemove 5s ease;
-}
-#line-btn2:checked ~ .about-line2 .line-move {
-  width: 100%;
-  animation: linemove3 5s ease;
-}
-#line-btn2:checked ~ .about-line3 .line-move {
-  width: 100%;
-  animation: linemove3 5.1s ease;
-}
-#line-btn2:checked ~ .about-line4 .line-move {
-  width: 100%;
-  animation: linemove3 5.2s ease;
-}
-#line-btn2:checked ~ .about-line5 .line-move {
-  width: 100%;
-  animation: linemove3 5.3s ease;
-}
-#line-btn2:checked ~ .about-line6 .line-move {
-  width: 100%;
-  animation: linemove3 5.4s ease;
-}
-#line-btn2:checked ~ .about-line7 .line-move {
-  width: 100%;
-  animation: linemove3 5.5s ease;
-}
-#line-btn2:checked ~ .about-line8 .line-move {
-  width: 100%;
-  animation: linemove3 5.6s ease;
-}
-#line-btn2:checked ~ .about-line9 .line-move {
-  width: 100%;
-  animation: linemove3 5.7s ease;
-}
-#line-btn2:checked ~ .about-line10 .line-move {
-  width: 100%;
-  animation: linemove3 5.8s ease;
-}
-#line-btn2:checked ~ .about-cover-line-box2 .about-cover-line2 {
-  animation: linewidth2 3s ease;
-}
-@keyframes linewidth2 {
-  0% {
-    width: 4vmax;
-  }
-  100% {
-    width: 4vmax;
-  }
-}
-
-#line-btn2:checked ~ .about-second-box {
-  opacity: 0%;
-  animation: secondbox2 1s ease;
-}
-@keyframes secondbox2 {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    filter: blur(3px);
-    opacity: 0%;
-  }
-}
-
-
-
-
 /* 버튼 강조 원 */
-.line-btn-click1 {
+#MAP-about:checked ~ .app-container .line-btn-click1 {
   position: absolute;
   top: 0vmax;
   left: 2vmax;
@@ -687,7 +566,7 @@
   z-index: 6;
   animation: click1 2s 5s infinite;
 }
-.line-btn-click2 {
+#MAP-about:checked ~ .app-container .line-btn-click2 {
   position: absolute;
   top: 0vmax;
   left: 2vmax;
@@ -701,7 +580,37 @@
   z-index: 6;
   animation: click1 2s 5.5s infinite;
 }
-.line-btn-click3 {
+
+#line-btn2:checked ~ .app-container .line-btn-click1 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5s infinite;
+}
+#line-btn2:checked ~ .app-container .line-btn-click2 {
+  position: absolute;
+  top: 0vmax;
+  left: 2vmax;
+  display: block;
+  width: 4vmax;
+  height: 4vmax;
+  border: rgb(255, 255, 255) solid 4px;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0%;
+  z-index: 6;
+  animation: click1 2s 5.5s infinite;
+}
+
+#line-btn1:checked ~ .app-container .line-btn-click3 {
   position: absolute;
   top: 0vmax;
   left: 2vmax;
@@ -715,7 +624,7 @@
   z-index: 6;
   animation: click1 2s 4s infinite;
 }
-.line-btn-click4 {
+#line-btn1:checked ~ .app-container .line-btn-click4 {
   position: absolute;
   top: 0vmax;
   left: 2vmax;
@@ -765,95 +674,236 @@
 
 
 
-
-
-/* 페이지 이동 화살표 */
-.tomain-box {
-  background-image: url(../img/left.jpg);
-  background-size: 4vmax;
-  rotate: 90deg;
-  position: absolute;
-  top: calc(15% - 4vmax);
-  left: 90%;
-  transform: translate(0, 50%);
-  display: block;
-  width: 4vmax;
-  height: 4vmax;
-  z-index: 10;
+/* 버튼1 체크 효과 */
+#line-btn1:checked ~ .app-container .about-cover-line-box {
+  left: 60%;
+  transition: 2.2s;
 }
-.tomain-box:hover {
-  animation: uparrow 1s ease infinite;
+#line-btn1:checked ~ .app-container .about-cover-line-box2 {
+  left: 12%;
+  transition: 2.2s;
 }
-@keyframes uparrow {
+#line-btn1:checked ~ .app-container .about-line1 .line-move .about-underline {
+  animation: aboutunderlinekeep 2s ease;
+}
+@keyframes aboutunderlinekeep {
   0% {
-    transform: translate(0, 50%);
+    width: calc(1.6vmax + 31px);
   }
   100% {
-    transform: translate(-1vmax, 50%);
-    opacity: 0%;
+    width: calc(1.6vmax + 31px);
   }
 }
 
-#tomain {
-  display: block;
-  z-index: 9;
-  animation: wait 6.5s ease;
+#line-btn1:checked ~ .app-container .about-line1 .line-move {
+  width: 0%;
+  animation: removeline 1.9s ease;
 }
-@keyframes wait {
+#line-btn1:checked ~ .app-container .about-line2 .line-move {
+  width: 0%;
+  animation: removeline 1.9s ease;
+}
+#line-btn1:checked ~ .app-container .about-line3 .line-move {
+  width: 0%;
+  animation: removeline 1.7s ease;
+}
+#line-btn1:checked ~ .app-container .about-line4 .line-move {
+  width: 0%;
+  animation: removeline 1.7s ease;
+}
+#line-btn1:checked ~ .app-container .about-line5 .line-move {
+  width: 0%;
+  animation: removeline 1.7s ease;
+}
+#line-btn1:checked ~ .app-container .about-line6 .line-move {
+  width: 0%;
+  animation: removeline 1.6s ease;
+}
+#line-btn1:checked ~ .app-container .about-line7 .line-move {
+  width: 0%;
+  animation: removeline 1.6s ease;
+}
+#line-btn1:checked ~ .app-container .about-line8 .line-move {
+  width: 0%;
+  animation: removeline 1.5s ease;
+}
+#line-btn1:checked ~ .app-container .about-line9 .line-move {
+  width: 0%;
+  animation: removeline 1.4s ease;
+}
+#line-btn1:checked ~ .app-container .about-line10 .line-move {
+  width: 0%;
+  animation: removeline 1.4s ease;
+}
+@keyframes removeline {
   0% {
-    opacity: 0%;
+    width: 70%;
   }
   98% {
-    opacity: 0%;
+    width: 0%;
   }
   100% {
+    width: 0%;
+  }
+}
+#line-btn1:checked ~ .app-container .about-cover-line-box2 .about-cover-line2 {
+  animation: linewidth1 2.5s ease;
+}
+@keyframes linewidth1 {
+  0% {
+    width: 4vmax;
+  }
+  40% {
+    width: 10vmax;
+  }
+  100% {
+    width: 4vmax;
+  }
+}
+
+#line-btn1:checked ~ .app-container .about-cover-line-box2 .line-button1 {
+  display: none;
+}
+#line-btn1:checked ~ .app-container .about-cover-line-box2 .line-btn-click1 {
+  display: none;
+}
+#line-btn1:checked ~ .app-container .about-cover-line-box2 .line-btn-click2 {
+  display: none;
+}
+#line-btn1:checked ~ .app-container .about-cover-line-box2 .line-button2 {
+  display: block;
+}
+#line-btn1:checked ~ .app-container .about-cover-line-box2 .line-btn-click3 {
+  display: block;
+}
+#line-btn1:checked ~ .app-container .about-cover-line-box2 .line-btn-click4 {
+  display: block;
+}
+
+
+#line-btn1:checked ~ .app-container .about-second-box {
+  opacity: 100%;
+  animation: secondbox 4.2s ease;
+}
+@keyframes secondbox {
+  0% {
+    filter: blur(3px);
+    opacity: 0%;
+  }
+  75% {
+    filter: blur(3px);
+    opacity: 0%;
+    transform: translate(-1vmax, -1vmax);
+  }
+  100% {
+    filter: blur(0px);
     opacity: 100%;
   }
 }
 
 
 
-.toproject-box {
-  background-image: url(../img/right.jpg);
-  background-size: 4vmax;
-  rotate: 90deg;
-  position: absolute;
-  top: 85%;
-  left: 90%;
-  transform: translate(0, 50%);
-  display: block;
-  width: 4vmax;
-  height: 4vmax;
-  z-index: 10;
+
+
+/* 버튼2 체크 효과 */
+#line-btn2:checked ~ .app-container .about-cover-line-box2 {
+  left: 55%;
+  transition: 1.4s;
+  transition-delay: .5s;
 }
-.toproject-box:hover {
-  animation: downarrow 1s ease infinite;
+#line-btn2:checked ~ .app-container .about-cover-line-box {
+  left: 50%;
+  transition: 1.4s;
+  transition-delay: .5s;
 }
-@keyframes downarrow {
+#line-btn2:checked ~ .app-container .about-line1 .line-move .about-underline {
+  animation: aboutunderline2 6s ease;
+}
+@keyframes aboutunderline2 {
   0% {
-    transform: translate(0, 50%);
+    width: 0px;
+  }
+  80% {
+    width: 0px;
   }
   100% {
-    transform: translate(1vmax, 50%);
-    opacity: 0%;
+    width: calc(1.6vmax + 31px);
+  }
+}
+#line-btn2:checked ~ .app-container .about-line1 .line-move {
+  width: 100%;
+  animation: linemove 5s ease;
+}
+#line-btn2:checked ~ .app-container .about-line2 .line-move {
+  width: 100%;
+  animation: linemove3 5s ease;
+}
+#line-btn2:checked ~ .app-container .about-line3 .line-move {
+  width: 100%;
+  animation: linemove3 5.1s ease;
+}
+#line-btn2:checked ~ .app-container .about-line4 .line-move {
+  width: 100%;
+  animation: linemove3 5.2s ease;
+}
+#line-btn2:checked ~ .app-container .about-line5 .line-move {
+  width: 100%;
+  animation: linemove3 5.3s ease;
+}
+#line-btn2:checked ~ .app-container .about-line6 .line-move {
+  width: 100%;
+  animation: linemove3 5.4s ease;
+}
+#line-btn2:checked ~ .app-container .about-line7 .line-move {
+  width: 100%;
+  animation: linemove3 5.5s ease;
+}
+#line-btn2:checked ~ .app-container .about-line8 .line-move {
+  width: 100%;
+  animation: linemove3 5.6s ease;
+}
+#line-btn2:checked ~ .app-container .about-line9 .line-move {
+  width: 100%;
+  animation: linemove3 5.7s ease;
+}
+#line-btn2:checked ~ .app-container .about-line10 .line-move {
+  width: 100%;
+  animation: linemove3 5.8s ease;
+}
+#line-btn2:checked ~ .app-container .about-cover-line-box2 .about-cover-line2 {
+  animation: linewidth2 3s ease;
+}
+@keyframes linewidth2 {
+  0% {
+    width: 4vmax;
+  }
+  100% {
+    width: 4vmax;
   }
 }
 
-#toproject {
-  display: block;
-  z-index: 9;
-  animation: wait 6.5s ease;
+#line-btn2:checked ~ .app-container .about-second-box {
+  opacity: 0%;
+  animation: secondbox2 1s ease;
 }
-@keyframes wait {
+@keyframes secondbox2 {
   0% {
-    opacity: 0%;
-  }
-  98% {
-    opacity: 0%;
-  }
-  100% {
     opacity: 100%;
   }
+  100% {
+    filter: blur(3px);
+    opacity: 0%;
+  }
 }
 
 
+
+
+
+/* 페이지 이동 모션 */
+#MAP-main:checked ~ .app-container .about-cover-container {
+  display: none;
+}
+#MAP-project:checked ~ .app-container .about-cover-container {
+  display: none;
+}

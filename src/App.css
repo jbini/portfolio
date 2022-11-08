@@ -63,10 +63,241 @@ h5 {
 }
 
 
-.app-container {
+/* 배경 및 이미지 */
+.app-cover-container {
   position: absolute;
   left: calc(15vmax + 50px);
   display: block;
   width: calc(85vmax - 50px);
+  height: 100vh;
+  overflow: hidden;
+}
+.app-cover-container input {
+  display: none;
+}
+.app-cover-imgbox {
+  position: relative;
+  display: block;
+  /* overflow: hidden; */
+  opacity: 30%;
+  user-select: none;
+}
+.app-cover-imgbox img {
+  position: absolute;
+  bottom: -102vh;
+  width: 100%;
+  transition: .5s;
+}
+
+.app-cover-imgbox2 {
+  position: relative;
+  display: block;
+  /* overflow: hidden; */
+  filter: brightness(55%);
+  z-index: 1;
+  user-select: none;
+}
+.app-cover-imgbox2 img {
+  position: absolute;
+  bottom: -110vh;
+  width: 100%;
+  transition: .5s;
+}
+@media screen and (max-width: 1350px) {
+  .app-cover-container .app-cover-imgbox img {
+    position: absolute;
+    bottom: -100vh;
+    width: 100%;
+  }
+  .app-cover-container .app-cover-imgbox2 img {
+    position: absolute;
+    bottom: -100vh;
+    width: 100%;
+  }
+}
+
+
+
+/* 배경 이동 */
+.app-container {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: calc(85vmax - 50px);
   height: 300vh;
+  z-index: 2;
+  transition: .5s;
+}
+
+#MAP-main:checked ~ .app-container {
+  transform: translateY(-0vh);
+}
+#MAP-about:checked ~ .app-container {
+  transform: translateY(-100vh);
+}
+#line-btn1:checked ~ .app-container {
+  transform: translateY(-100vh);
+}
+#line-btn2:checked ~ .app-container {
+  transform: translateY(-100vh);
+}
+#MAP-project:checked ~ .app-container {
+  transform: translateY(-200vh);
+}
+
+#MAP-main:checked ~ .app-cover-imgbox img {
+  bottom: -102vh;
+}
+#MAP-main:checked ~ .app-cover-imgbox2 img {
+  bottom: -110vh;
+}
+
+#MAP-about:checked ~ .app-cover-imgbox img {
+  bottom: -101vh;
+}
+#MAP-about:checked ~ .app-cover-imgbox2 img {
+  bottom: -105vh;
+}
+
+#line-btn1:checked ~ .app-cover-imgbox img {
+  bottom: -101vh;
+}
+#line-btn1:checked ~ .app-cover-imgbox2 img {
+  bottom: -105vh;
+}
+#line-btn2:checked ~ .app-cover-imgbox img {
+  bottom: -101vh;
+}
+#line-btn2:checked ~ .app-cover-imgbox2 img {
+  bottom: -105vh;
+}
+
+#MAP-project:checked ~ .app-cover-imgbox img {
+  bottom: -100vh;
+}
+#MAP-project:checked ~ .app-cover-imgbox2 img {
+  bottom: -100vh;
+}
+
+
+
+
+/* 페이지 이동 화살표 */
+.main-about {
+  background-image: url(./img/right.jpg);
+  background-size: 4vmax;
+  rotate: 90deg;
+  position: absolute;
+  top: 85%;
+  left: 90%;
+  transform: translate(0, 50%);
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 10;
+  cursor: pointer;
+}
+.main-about:hover {
+  animation: downarrow 1s ease infinite;
+}
+@keyframes downarrow {
+  0% {
+    transform: translate(0, 50%);
+  }
+  100% {
+    transform: translate(1vmax, 50%);
+    opacity: 0%;
+  }
+}
+.about-project {
+  background-image: url(./img/right.jpg);
+  background-size: 4vmax;
+  rotate: 90deg;
+  position: absolute;
+  top: 85%;
+  left: 90%;
+  transform: translate(0, 50%);
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 10;
+  cursor: pointer;
+}
+.about-project:hover {
+  animation: downarrow 1s ease infinite;
+}
+
+
+.about-main {
+  background-image: url(./img/left.jpg);
+  background-size: 4vmax;
+  rotate: 90deg;
+  position: absolute;
+  top: calc(15% - 4vmax);
+  left: 90%;
+  transform: translate(0, 50%);
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 10;
+  cursor: pointer;
+}
+.about-main:hover {
+  animation: uparrow 1s ease infinite;
+}
+@keyframes uparrow {
+  0% {
+    transform: translate(0, 50%);
+  }
+  100% {
+    transform: translate(-1vmax, 50%);
+    opacity: 0%;
+  }
+}
+.project-about {
+  background-image: url(./img/left.jpg);
+  background-size: 4vmax;
+  rotate: 90deg;
+  position: absolute;
+  top: calc(15% - 4vmax);
+  left: 90%;
+  transform: translate(0, 50%);
+  display: none;
+  width: 4vmax;
+  height: 4vmax;
+  z-index: 10;
+  cursor: pointer;
+}
+.project-about:hover {
+  animation: uparrow 1s ease infinite;
+}
+
+
+
+/* 화살표 표시 */
+#MAP-main:checked ~ .main-about {
+  display: block;
+}
+
+#MAP-about:checked ~ .about-main {
+  display: block;
+}
+#MAP-about:checked ~ .about-project {
+  display: block;
+}
+#line-btn1:checked ~ .about-main {
+  display: block;
+}
+#line-btn1:checked ~ .about-project {
+  display: block;
+}
+#line-btn2:checked ~ .about-main {
+  display: block;
+}
+#line-btn2:checked ~ .about-project {
+  display: block;
+}
+
+#MAP-project:checked ~ .project-about {
+  display: block;
 }

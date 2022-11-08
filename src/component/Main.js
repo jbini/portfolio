@@ -15,12 +15,12 @@ export default function Main() {
         <div className='main-cover-container'>
           <Keyboardiframe />
 
-          <div className='main-cover-imgbox'>
+          {/* <div className='main-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>
           </div>
           <div className='main-cover-imgbox2'>
               <img src={mainimg2} alt='mainimg2'></img>
-          </div>
+          </div> */}
 
           {/* <div className='main-cover-line-box'>
             <div className='main-cover-line'></div>
@@ -67,9 +67,10 @@ export default function Main() {
               <h5>끊임없이 배우는 개발자의 영역에서 새로운 역량을 키워낼 것입니다.</h5></div>
 
           </div>
-          <Link to='/About' id='toabout'>
+
+          {/* <Link to='/About' id='toabout'>
             <div className='toabout-box'></div>
-          </Link>
+          </Link> */}
 
         </div>
     );

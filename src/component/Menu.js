@@ -9,7 +9,8 @@ export default function Menu() {
 
           <div className='menu-list-box'>
             <div className='menu-list-line'>
-              <label for='MAP-main'><h2 id='list-line-1'>M</h2><h2>ain</h2></label>
+              <label for='MAP-main' id='main1'><h2 id='list-line-1'>M</h2><h2>ain</h2></label>
+              {/* <label for='MAP-project-main' id='main2'><h2 id='list-line-1'>M</h2><h2>ain</h2></label> */}
               <div className='underline-box' id='underline-box1'>
                 <div className='underline-1'></div>
                 <div className='underline-2'></div>

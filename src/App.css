@@ -86,7 +86,6 @@ h5 {
   position: absolute;
   bottom: -102vh;
   width: 100%;
-  transition: .5s;
 }
 
 .app-cover-imgbox2 {
@@ -101,18 +100,44 @@ h5 {
   position: absolute;
   bottom: -110vh;
   width: 100%;
-  transition: .5s;
 }
 @media screen and (max-width: 1350px) {
-  .app-cover-container .app-cover-imgbox img {
+  .app-cover-container .app-cover-container .app-cover-imgbox img {
     position: absolute;
     bottom: -100vh;
     width: 100%;
   }
-  .app-cover-container .app-cover-imgbox2 img {
+  .app-cover-container .app-cover-container .app-cover-imgbox2 img {
     position: absolute;
     bottom: -100vh;
     width: 100%;
+  }
+
+  .app-cover-container #MAP-main:checked ~ .app-cover-imgbox img {
+    bottom: -100vh;
+  }
+  .app-cover-container #MAP-main:checked ~ .app-cover-imgbox2 img {
+    bottom: -100vh;
+  }
+  
+  .app-cover-container #MAP-about:checked ~ .app-cover-imgbox img {
+    bottom: -100vh;
+  }
+  .app-cover-container #MAP-about:checked ~ .app-cover-imgbox2 img {
+    bottom: -100vh;
+  }
+  
+  .app-cover-container #line-btn1:checked ~ .app-cover-imgbox img {
+    bottom: -100vh;
+  }
+  .app-cover-container #line-btn1:checked ~ .app-cover-imgbox2 img {
+    bottom: -100vh;
+  }
+  .app-cover-container #line-btn2:checked ~ .app-cover-imgbox img {
+    bottom: -100vh;
+  }
+  .app-cover-container #line-btn2:checked ~ .app-cover-imgbox2 img {
+    bottom: -100vh;
   }
 }
 
@@ -126,14 +151,15 @@ h5 {
   width: calc(85vmax - 50px);
   height: 300vh;
   z-index: 2;
-  transition: .5s;
 }
 
 #MAP-main:checked ~ .app-container {
   transform: translateY(-0vh);
+  transition: .5s;
 }
 #MAP-about:checked ~ .app-container {
   transform: translateY(-100vh);
+  transition: .5s;
 }
 #line-btn1:checked ~ .app-container {
   transform: translateY(-100vh);
@@ -143,20 +169,25 @@ h5 {
 }
 #MAP-project:checked ~ .app-container {
   transform: translateY(-200vh);
+  transition: .5s;
 }
 
 #MAP-main:checked ~ .app-cover-imgbox img {
   bottom: -102vh;
+  transition: .5s;
 }
 #MAP-main:checked ~ .app-cover-imgbox2 img {
   bottom: -110vh;
+  transition: .5s;
 }
 
 #MAP-about:checked ~ .app-cover-imgbox img {
   bottom: -101vh;
+  transition: .5s;
 }
 #MAP-about:checked ~ .app-cover-imgbox2 img {
   bottom: -105vh;
+  transition: .5s;
 }
 
 #line-btn1:checked ~ .app-cover-imgbox img {
@@ -174,9 +205,11 @@ h5 {
 
 #MAP-project:checked ~ .app-cover-imgbox img {
   bottom: -100vh;
+  transition: .5s;
 }
 #MAP-project:checked ~ .app-cover-imgbox2 img {
   bottom: -100vh;
+  transition: .5s;
 }
 
 
@@ -191,7 +224,7 @@ h5 {
   top: 85%;
   left: 90%;
   transform: translate(0, 50%);
-  display: none;
+  display: block;
   width: 4vmax;
   height: 4vmax;
   z-index: 10;
@@ -277,6 +310,18 @@ h5 {
 /* 화살표 표시 */
 #MAP-main:checked ~ .main-about {
   display: block;
+}
+#MAP-about:checked ~ .main-about {
+  display: none;
+}
+#line-btn1:checked ~ .main-about {
+  display: none;
+}
+#line-btn1:checked ~ .main-about {
+  display: none;
+}
+#MAP-project:checked ~ .main-about {
+  display: none;
 }
 
 #MAP-about:checked ~ .about-main {

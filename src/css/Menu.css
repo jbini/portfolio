@@ -212,3 +212,7 @@ h5 {
   width: 100%;
   min-height: calc(15px + 4vmin);
 }
+
+#main2 {
+  display: none;
+}

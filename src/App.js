@@ -24,6 +24,8 @@ function App() {
           <input type='radio' name='MAP-radio' id='line-btn1'></input>
           <input type='radio' name='MAP-radio' id='line-btn2'></input>
           <input type='radio' name='MAP-radio' id='MAP-project'></input>
+          <input type='radio' name='MAP-radio' id='MAP-main-project'></input>
+          <input type='radio' name='MAP-radio' id='MAP-project-main'></input>
 
           <div className='app-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>

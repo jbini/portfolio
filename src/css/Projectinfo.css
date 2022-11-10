@@ -1,7 +1,4 @@
 
-
-
-
 /* 메인 배경 */
 .project-cover-container {
   position: absolute;
@@ -12,74 +9,177 @@
   height: 100vh;
   overflow: hidden;
 }
-.project-cover-imgbox {
-  position: relative;
-  display: block;
-  /* overflow: hidden; */
-  opacity: 30%;
-}
-.project-cover-imgbox img {
-  position: absolute;
-  bottom: -100vh;
-  width: 100%;
-}
-
-.project-cover-imgbox2 {
-  position: relative;
-  display: block;
-  /* overflow: hidden; */
-  filter: brightness(55%);
-  z-index: 1;
-  user-select: none;
-}
-.project-cover-imgbox2 img {
-  position: absolute;
-  bottom: -100vh;
-  width: 100%;
-}
 
 
-/* 페이지 이동 화살표 */
-.tomain-box {
-  background-image: url(../img/left.jpg);
-  background-size: 4vmax;
-  rotate: 90deg;
+
+
+/* 클릭 박스 */
+.project-box1 {
+  /* background-color: aqua; */
   position: absolute;
-  top: calc(15% - 4vmax);
-  left: 90%;
-  transform: translate(0, 50%);
+  top: 20%;
+  left: 15%;
   display: block;
-  width: 4vmax;
-  height: 4vmax;
-  z-index: 10;
+  width: calc(8vmax + 20px);
+  height: calc(3.2vmax + 8px);
+  overflow: hidden;
+  animation: projectbox1 4s ease;
 }
-.tomain-box:hover {
-  animation: uparrow 1s ease infinite;
-}
-@keyframes uparrow {
+@keyframes projectbox1{
   0% {
-    transform: translate(0, 50%);
+    top: 10%;
+    left: 45%;
+    opacity: 0%;
+  }
+  20% {
+    top: 10%;
+    left: 45%;
+    opacity: 0%;
+  }
+  50% {
+    top: 10%;
+    left: 45%;
   }
   100% {
-    transform: translate(-1vmax, 50%);
-    opacity: 0%;
+    top: 20%;
+    left: 15%;
   }
 }
 
-#tomain {
+.project-box2 {
+  /* background-color: aqua; */
+  position: absolute;
+  top: 35%;
+  left: 65%;
   display: block;
-  z-index: 9;
-  animation: wait 6.5s ease;
+  width: calc(8vmax + 20px);
+  height: calc(3.2vmax + 8px);
+  overflow: hidden;
+  animation: projectbox2 4s ease;
 }
-@keyframes wait {
+@keyframes projectbox2{
   0% {
+    top: 15%;
+    left: 45%;
     opacity: 0%;
   }
-  98% {
+  20% {
+    top: 15%;
+    left: 45%;
     opacity: 0%;
+  }
+  50% {
+    top: 15%;
+    left: 45%;
   }
   100% {
-    opacity: 100%;
+    top: 35%;
+    left: 65%;
   }
 }
 
+.project-box3 {
+  /* background-color: aqua; */
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(3.2vmax + 8px);
+  overflow: hidden;
+  animation: projectbox3 4s ease;
+}
+@keyframes projectbox3{
+  0% {
+    top: 20%;
+    left: 45%;
+    opacity: 0%;
+  }
+  20% {
+    top: 20%;
+    left: 45%;
+    opacity: 0%;
+  }
+  50% {
+    top: 20%;
+    left: 45%;
+  }
+  100% {
+    top: 70%;
+    left: 30%;
+  }
+}
+
+
+/* 박스 hover 효과 */
+.project-box-effect1 {
+  background-color: #ffffff;
+  position: absolute;
+  left: -3vmax;
+  display: block;
+  width: 3vmax;
+  height: 3px;
+}
+.project-box-effect2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -3vmax;
+  display: block;
+  width: 3px;
+  height: 3vmax;
+}
+.project-box-effect3 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -4vmax;
+  right: 0;
+  display: block;
+  width: 3px;
+  height: 3vmax;
+}
+.project-box-effect4 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: -4vmax;
+  display: block;
+  width: 3vmax;
+  height: 3px;
+}
+
+#projectbox h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#projectbox:hover {
+  background-color: rgba(30, 30, 30, .05);
+  transition: .2s;
+  transition-delay: .2s;
+}
+
+
+#projectbox:hover .project-box-effect1 {
+  left: calc(14vmax + 20px);
+  transition: .6s;
+}
+#projectbox:hover .project-box-effect2 {
+  top: calc(9.2vmax + 8px);
+  transition: .6s;
+}
+#projectbox:hover .project-box-effect3 {
+  top: calc(5.2vmax + 8px);
+  transition: .6s;
+  transition-delay: .12s;
+}
+#projectbox:hover .project-box-effect4 {
+  left: calc(10vmax + 20px);
+  transition: .6s;
+  transition-delay: .05s;
+}
+
+
+
+/* width: calc(8vmax + 20px); 
+  height: calc(3.2vmax + 8px); */

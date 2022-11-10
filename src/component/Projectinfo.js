@@ -1,22 +1,33 @@
 import '../css/Projectinfo.css';
-import main from '../img/main.jpg'
-import main2 from '../img/main2.jpg'
-import main2me from '../img/main2-2.jpg'
 
-let mainimg = main2
-let mainimg2 = main2me
 
 export default function Projectinfo() {
     return(
         <div className='project-cover-container'>
 
-          {/* <div className='project-cover-imgbox'>
-              <img src={mainimg} alt='mainimg'></img>
-          </div>
+            <div className='project-box1' id='projectbox'>
+                <div className='project-box-effect1'></div>
+                <div className='project-box-effect2'></div>
+                <div className='project-box-effect3'></div>
+                <div className='project-box-effect4'></div>
+                <h3>asd</h3>
+            </div>
 
-          <div className='project-cover-imgbox2'>
-              <img src={mainimg2} alt='mainimg2'></img>
-          </div> */}
+            <div className='project-box2' id='projectbox'>
+                <div className='project-box-effect1'></div>
+                <div className='project-box-effect2'></div>
+                <div className='project-box-effect3'></div>
+                <div className='project-box-effect4'></div>
+                <h3>asd</h3>
+            </div>
+
+            <div className='project-box3' id='projectbox'>
+                <div className='project-box-effect1'></div>
+                <div className='project-box-effect2'></div>
+                <div className='project-box-effect3'></div>
+                <div className='project-box-effect4'></div>
+                <h3>asd</h3>
+            </div>
 
         </div>
     );

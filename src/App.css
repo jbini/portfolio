@@ -229,6 +229,18 @@ h5 {
   height: 4vmax;
   z-index: 10;
   cursor: pointer;
+  animation: wait 6.5s ease;
+}
+@keyframes wait {
+  0% {
+    opacity: 0%;
+  }
+  98% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 .main-about:hover {
   animation: downarrow 1s ease infinite;
@@ -310,6 +322,10 @@ h5 {
 /* 화살표 표시 */
 #MAP-main:checked ~ .main-about {
   display: block;
+  animation: wait 0s ease;
+}
+#MAP-main:checked ~ .main-about:hover {
+  animation: downarrow 1s ease infinite;
 }
 #MAP-about:checked ~ .main-about {
   display: none;

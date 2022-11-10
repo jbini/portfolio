@@ -132,10 +132,63 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+}
+
+.project-box-dot1 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  left: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  right: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot3 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -0.3vmax;
+  left: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot4 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -0.3vmax;
+  right: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  /* border-radius: .2vmax; */
 }
 
 
+
+
+
+
+
 /* 박스 hover 효과 */
+#MAP-project:checked ~ .app-container #projectbox:hover {
+  background-color: rgba(2, 2, 2, .2);
+  transition: .2s;
+  transition-delay: .2s;
+}
+
 .project-box-effect1 {
   background-color: #ffffff;
   position: absolute;
@@ -191,7 +244,6 @@
 }
 
 
-
 .project-box-effect5 {
   background-color: #ffffff;
   position: absolute;
@@ -209,13 +261,30 @@
 }
 
 
-
-#MAP-project:checked ~ .app-container #projectbox:hover {
-  background-color: rgba(2, 2, 2, .2);
-  transition: .2s;
-  transition-delay: .2s;
+#projectbox:hover .project-box-dot1 {
+  /* top: -1vmax;
+  left: -1vmax; */
+  rotate: 45deg;
+  transition: .6s;
 }
-
+#projectbox:hover .project-box-dot2 {
+  /* top: -1vmax;
+  right: -1vmax; */
+  rotate: -45deg;
+  transition: .6s;
+}
+#projectbox:hover .project-box-dot3 {
+  /* bottom: -1vmax;
+  left: -1vmax; */
+  rotate: -45deg;
+  transition: .6s;
+}
+#projectbox:hover .project-box-dot4 {
+  /* bottom: -1vmax;
+  right: -1vmax; */
+  rotate: 45deg;
+  transition: .6s;
+}
 
 
 

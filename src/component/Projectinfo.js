@@ -11,6 +11,10 @@ export default function Projectinfo() {
                 <div className='project-box-effect3'></div>
                 <div className='project-box-effect4'></div>
                 <div className='project-box-effect5'></div>
+                <div className='project-box-dot1'></div>
+                {/* <div className='project-box-dot2'></div>
+                <div className='project-box-dot3'></div>
+                <div className='project-box-dot4'></div> */}
                 <h3>INFORMATION</h3>
             </div>
 
@@ -20,6 +24,7 @@ export default function Projectinfo() {
                 <div className='project-box-effect3'></div>
                 <div className='project-box-effect4'></div>
                 <div className='project-box-effect5'></div>
+                <div className='project-box-dot2'></div>
                 <h3>PREVIEW</h3>
             </div>
 
@@ -29,6 +34,7 @@ export default function Projectinfo() {
                 <div className='project-box-effect3'></div>
                 <div className='project-box-effect4'></div>
                 <div className='project-box-effect5'></div>
+                <div className='project-box-dot3'></div>
                 <h3>EVALUATE</h3>
             </div>
 

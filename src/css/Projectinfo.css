@@ -133,8 +133,8 @@
 
 #projectbox h3 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: calc(1.2vmax + 4px);
+  left: calc(4vmax + 10px);
   transform: translate(-50%, -50%);
   font-size: calc(1.2vmax + 4px);
   color: #ffffff;
@@ -157,7 +157,7 @@
   position: absolute;
   top: -0.3vmax;
   left: -0.3vmax;
-  display: block;
+  display: none;
   width: .6vmax;
   height: .6vmax;
   transition: .3s;
@@ -180,7 +180,7 @@
   position: absolute;
   top: -0.3vmax;
   right: -0.3vmax;
-  display: block;
+  display: none;
   width: .6vmax;
   height: .6vmax;
   transition: .3s;
@@ -203,7 +203,7 @@
   position: absolute;
   bottom: -0.3vmax;
   left: -0.3vmax;
-  display: block;
+  display: none;
   width: .6vmax;
   height: .6vmax;
   transition: .3s;
@@ -230,7 +230,12 @@
 
 /* 박스 hover 효과 */
 #MAP-project:checked ~ .app-container #projectbox:hover {
-  background-color: rgba(2, 2, 2, .2);
+  background-color: rgba(2, 2, 2, .4);
+  transition: .2s;
+  transition-delay: .2s;
+}
+#project-dark:checked ~ .app-container #projectbox:hover {
+  background-color: rgba(2, 2, 2, .4);
   transition: .2s;
   transition-delay: .2s;
 }
@@ -341,10 +346,36 @@
   0% {
     opacity: 100%;
   }
+  50% {
+    opacity: 0%;
+  }
   100% {
     opacity: 0%;
   }
 }
+#project-info:checked ~ .app-container .project-box1 {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 4;
+}
+#project-info:checked ~ .app-container #project-box-effect1 {
+  display: none;
+}
+#project-info:checked ~ .app-container .project-box-dot1 {
+  display: none;
+}
+#project-info:checked ~ .app-container .project-box-dot1-2 {
+  display: block;
+}
+
 #project-info:checked ~ .app-container .project-box2 {
   background-color: rgba(50, 50, 50, .2);
   position: absolute;
@@ -377,6 +408,11 @@
 
 
 
+
+
+
+
+
 .project-darkbg {
   background-color: rgba(50, 50, 50, .2);
   position: absolute;
@@ -387,17 +423,17 @@
 }
 #project-info:checked ~ .app-container #project-darkbg1 {
   display: block;
-  animation: darkbgopacity 1s ease;
+  animation: darkbgopacity .5s ease;
   z-index: 2;
 }
 #project-pre:checked ~ .app-container #project-darkbg1 {
   display: block;
-  animation: darkbgopacity 1s ease;
+  animation: darkbgopacity .5s ease;
   z-index: 2;
 }
 #project-eva:checked ~ .app-container #project-darkbg1 {
   display: block;
-  animation: darkbgopacity 1s ease;
+  animation: darkbgopacity .5s ease;
   z-index: 2;
 }
 @keyframes darkbgopacity {
@@ -410,22 +446,22 @@
 }
 
 
-.project-box1-up {
-  background-color: rgba(50, 50, 50, .2);
+/* .project-box1-up {
+  background-color: rgba(2, 2, 2, .4);
   position: absolute;
-  top: 20%;
-  left: 15%;
+  top: 23%;
+  left: 20%;
   display: none;
-  width: calc(8vmax + 20px);
-  height: calc(2.4vmax + 8px);
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
   border-radius: 0.2vmax;
   overflow: hidden;
   z-index: 4;
 } 
 #projectboxup h3 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: calc(1.2vmax + 4px);
+  left: calc(4vmax + 10px);
   transform: translate(-50%, -50%);
   font-size: calc(1.2vmax + 4px);
   color: #ffffff;
@@ -433,7 +469,28 @@
 }
 #project-info:checked ~ .app-container .project-box1-up {
   display: block;
+  animation: projectbox1up 2s ease;
 }
+@keyframes projectbox1up {
+  0% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+  }
+  40% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+  }
+  100% {
+    top: 23%;
+    left: 20%;
+    width: calc(40vmax + 160px);
+    height: calc(25vmax + 100px);
+  }
+} */
 
 
 
@@ -457,9 +514,48 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
+  opacity: 100%;
   transition: 1s;
-  /* transition-delay: 1s; */
+  /* transition-delay: .8s; */
 }
+/* #project-dark:checked ~ .app-container .project-box1-up {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  opacity: 0%;
+  z-index: 0;
+  animation: projectbox1down 1s ease;
+}
+@keyframes projectbox1down {
+  0% {
+    top: 23%;
+    left: 20%;
+    width: calc(40vmax + 160px);
+    height: calc(25vmax + 100px);
+    opacity: 100%;
+  }
+  99% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+    opacity: 100%;
+  }
+  100% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+    opacity: 0%;
+  }
+} */
+
 #project-dark:checked ~ .app-container .project-box2 {
   background-color: rgba(50, 50, 50, .2);
   position: absolute;
@@ -472,8 +568,9 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
+  opacity: 100%;
   transition: 1s;
-  /* transition-delay: 1s; */
+  /* transition-delay: .8s; */
 }
 #project-dark:checked ~ .app-container .project-box3 {
   background-color: rgba(50, 50, 50, .2);
@@ -487,6 +584,7 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
+  opacity: 100%;
   transition: 1s;
-  /* transition-delay: 1s; */
+  /* transition-delay: .8s; */
 }

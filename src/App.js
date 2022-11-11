@@ -24,6 +24,10 @@ function App() {
           <input type='radio' name='MAP-radio' id='line-btn1'></input>
           <input type='radio' name='MAP-radio' id='line-btn2'></input>
           <input type='radio' name='MAP-radio' id='MAP-project'></input>
+          <input type='radio' name='MAP-radio' id='project-info'></input>
+          <input type='radio' name='MAP-radio' id='project-pre'></input>
+          <input type='radio' name='MAP-radio' id='project-eva'></input>
+          <input type='radio' name='MAP-radio' id='project-dark'></input>
           <input type='radio' name='MAP-radio' id='MAP-main-project'></input>
           <input type='radio' name='MAP-radio' id='MAP-project-main'></input>
 

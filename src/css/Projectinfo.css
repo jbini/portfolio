@@ -9,7 +9,9 @@
   height: 100vh;
   overflow: hidden;
 }
-
+.project-cover-container input {
+  display: none;
+}
 
 
 
@@ -35,6 +37,7 @@
   border-radius: 0.2vmax;
   overflow: hidden;
   cursor: pointer;
+  z-index: 3;
   animation: projectbox1 2.5s ease;
 }
 @keyframes projectbox1{
@@ -69,6 +72,7 @@
   border-radius: 0.2vmax;
   overflow: hidden;
   cursor: pointer;
+  z-index: 3;
   animation: projectbox2 2.5s ease;
 }
 @keyframes projectbox2{
@@ -103,6 +107,7 @@
   border-radius: 0.2vmax;
   overflow: hidden;
   cursor: pointer;
+  z-index: 3;
   animation: projectbox3 2.5s ease;
 }
 @keyframes projectbox3{
@@ -133,6 +138,7 @@
   transform: translate(-50%, -50%);
   font-size: calc(1.2vmax + 4px);
   color: #ffffff;
+  user-select: none;
 }
 
 .project-box-dot1 {
@@ -143,6 +149,19 @@
   display: block;
   width: .6vmax;
   height: .6vmax;
+  transition: .3s;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot1-2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  left: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  rotate: 45deg;
   /* border-radius: .2vmax; */
 }
 .project-box-dot2 {
@@ -153,6 +172,19 @@
   display: block;
   width: .6vmax;
   height: .6vmax;
+  transition: .3s;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot2-2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  right: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  rotate: 45deg;
   /* border-radius: .2vmax; */
 }
 .project-box-dot3 {
@@ -163,6 +195,19 @@
   display: block;
   width: .6vmax;
   height: .6vmax;
+  transition: .3s;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot3-2 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -0.3vmax;
+  left: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  rotate: 45deg;
   /* border-radius: .2vmax; */
 }
 .project-box-dot4 {
@@ -173,6 +218,7 @@
   display: block;
   width: .6vmax;
   height: .6vmax;
+  transition: .3s;
   /* border-radius: .2vmax; */
 }
 
@@ -290,5 +336,157 @@
 
 
 
-/* width: calc(8vmax + 20px); 
-  height: calc(3.2vmax + 8px); */
+/* 박스 클릭 효과 */
+@keyframes boxhide {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+#project-info:checked ~ .app-container .project-box2 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+#project-info:checked ~ .app-container .project-box3 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+
+
+
+
+.project-darkbg {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#project-info:checked ~ .app-container #project-darkbg1 {
+  display: block;
+  animation: darkbgopacity 1s ease;
+  z-index: 2;
+}
+#project-pre:checked ~ .app-container #project-darkbg1 {
+  display: block;
+  animation: darkbgopacity 1s ease;
+  z-index: 2;
+}
+#project-eva:checked ~ .app-container #project-darkbg1 {
+  display: block;
+  animation: darkbgopacity 1s ease;
+  z-index: 2;
+}
+@keyframes darkbgopacity {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+.project-box1-up {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: none;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  z-index: 4;
+} 
+#projectboxup h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+  user-select: none;
+}
+#project-info:checked ~ .app-container .project-box1-up {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/* 버튼 초기화 */
+#project-dark:checked ~ .app-container .project-box1 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  transition: 1s;
+  /* transition-delay: 1s; */
+}
+#project-dark:checked ~ .app-container .project-box2 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  transition: 1s;
+  /* transition-delay: 1s; */
+}
+#project-dark:checked ~ .app-container .project-box3 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  transition: 1s;
+  /* transition-delay: 1s; */
+}

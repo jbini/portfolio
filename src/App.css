@@ -171,6 +171,22 @@ h5 {
   transform: translateY(-200vh);
   transition: .5s;
 }
+#project-info:checked ~ .app-container {
+  transform: translateY(-200vh);
+  transition: .5s;
+}
+#project-pre:checked ~ .app-container {
+  transform: translateY(-200vh);
+  transition: .5s;
+}
+#project-eva:checked ~ .app-container {
+  transform: translateY(-200vh);
+  transition: .5s;
+}
+#project-dark:checked ~ .app-container {
+  transform: translateY(-200vh);
+  transition: .5s;
+}
 
 #MAP-main:checked ~ .app-cover-imgbox img {
   bottom: -102vh;
@@ -208,6 +224,38 @@ h5 {
   transition: .5s;
 }
 #MAP-project:checked ~ .app-cover-imgbox2 img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-info:checked ~ .app-cover-imgbox img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-info:checked ~ .app-cover-imgbox2 img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-pre:checked ~ .app-cover-imgbox img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-pre:checked ~ .app-cover-imgbox2 img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-eva:checked ~ .app-cover-imgbox img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-eva:checked ~ .app-cover-imgbox2 img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-dark:checked ~ .app-cover-imgbox img {
+  bottom: -100vh;
+  transition: .5s;
+}
+#project-dark:checked ~ .app-cover-imgbox2 img {
   bottom: -100vh;
   transition: .5s;
 }
@@ -339,6 +387,18 @@ h5 {
 #MAP-project:checked ~ .main-about {
   display: none;
 }
+#project-info:checked ~ .main-about {
+  display: none;
+}
+#project-pre:checked ~ .main-about {
+  display: none;
+}
+#project-eva:checked ~ .main-about {
+  display: none;
+}
+#project-dark:checked ~ .main-about {
+  display: none;
+}
 
 #MAP-about:checked ~ .about-main {
   display: block;
@@ -360,5 +420,17 @@ h5 {
 }
 
 #MAP-project:checked ~ .project-about {
+  display: block;
+}
+#project-info:checked ~ .project-about {
+  display: block;
+}
+#project-pre:checked ~ .project-about {
+  display: block;
+}
+#project-eva:checked ~ .project-about {
+  display: block;
+}
+#project-dark:checked ~ .project-about {
   display: block;
 }

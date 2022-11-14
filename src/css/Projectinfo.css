@@ -38,6 +38,7 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
+  transition: .7s;
   animation: projectbox1 2.5s ease;
 }
 @keyframes projectbox1{
@@ -73,6 +74,7 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
+  transition: .7s;
   animation: projectbox2 2.5s ease;
 }
 @keyframes projectbox2{
@@ -108,6 +110,7 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
+  transition: .7s;
   animation: projectbox3 2.5s ease;
 }
 @keyframes projectbox3{
@@ -131,11 +134,29 @@
   }
 }
 
-#projectbox h3 {
+.project-box1 h3 {
   position: absolute;
   top: calc(1.2vmax + 4px);
   left: calc(4vmax + 10px);
   transform: translate(-50%, -50%);
+  font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+  user-select: none;
+}
+.project-box2 h3 {
+  position: absolute;
+  top: calc(1.2vmax + 4px);
+  right: calc(4vmax + 10px);
+  transform: translate(50%, -50%);
+  font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+  user-select: none;
+}
+.project-box3 h3 {
+  position: absolute;
+  bottom: calc(1.2vmax + 4px);
+  left: calc(4vmax + 10px);
+  transform: translate(-50%, 50%);
   font-size: calc(1.2vmax + 4px);
   color: #ffffff;
   user-select: none;
@@ -221,8 +242,42 @@
   transition: .3s;
   /* border-radius: .2vmax; */
 }
+.project-box-X1 {
+  position: absolute;
+  top: 0;
+  right: calc(5vmax + 15px);
+  display: none;
+  cursor: pointer;
+}
+.project-box-X2 {
+  position: absolute;
+  top: 0;
+  left: calc(5vmax + 15px);
+  display: none;
+  cursor: pointer;
+}
+.project-box-X3 {
+  position: absolute;
+  top: calc(2.4vmax + 8px);
+  right: calc(5vmax + 15px);
+  display: none;
+  cursor: pointer;
+}
 
 
+.project-box-content2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: calc(3vmax + 10px);
+  left: calc(1vmax + 8px);
+  display: block;
+  width: calc(38vmax + 144px);
+  height: calc(21.5vmax + 70px);
+  opacity: 0%;
+}
+#project-iframe1 {
+  display: none;
+}
 
 
 
@@ -231,15 +286,21 @@
 /* 박스 hover 효과 */
 #MAP-project:checked ~ .app-container #projectbox:hover {
   background-color: rgba(2, 2, 2, .4);
-  transition: .2s;
-  transition-delay: .2s;
 }
 #project-dark:checked ~ .app-container #projectbox:hover {
   background-color: rgba(2, 2, 2, .4);
-  transition: .2s;
-  transition-delay: .2s;
 }
-
+@keyframes effectwait {
+  0% {
+    opacity: 0%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .project-box-effect1 {
   background-color: #ffffff;
   position: absolute;
@@ -247,6 +308,7 @@
   display: block;
   width: 3vmax;
   height: 0.1vmax;
+  animation: effectwait .5s ease;
 }
 .project-box-effect2 {
   background-color: #ffffff;
@@ -255,6 +317,7 @@
   display: block;
   width: 0.1vmax;
   height: 3vmax;
+  animation: effectwait .5s ease;
 }
 .project-box-effect3 {
   background-color: #ffffff;
@@ -264,6 +327,7 @@
   display: block;
   width: 0.1vmax;
   height: 3vmax;
+  animation: effectwait .5s ease;
 }
 .project-box-effect4 {
   background-color: #ffffff;
@@ -273,6 +337,7 @@
   display: block;
   width: 3vmax;
   height: 0.1vmax;
+  animation: effectwait .5s ease;
 }
 
 #projectbox:hover .project-box-effect1 {
@@ -305,6 +370,7 @@
   height: calc(5vmax + 10px);
   rotate: 30deg;
   opacity: 90%;
+  animation: effectwait .5s ease;
 }
 #projectbox:hover .project-box-effect5 {
   left: calc(10vmax + 20px);
@@ -375,7 +441,10 @@
 #project-info:checked ~ .app-container .project-box-dot1-2 {
   display: block;
 }
-
+#project-info:checked ~ .app-container .project-box-X1 {
+  display: block;
+  animation: effectwait .5s ease;
+}
 #project-info:checked ~ .app-container .project-box2 {
   background-color: rgba(50, 50, 50, .2);
   position: absolute;
@@ -408,8 +477,125 @@
 
 
 
+#project-pre:checked ~ .app-container .project-box2 {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 4;
+}
+#project-pre:checked ~ .app-container .project-box-content2 {
+  opacity: 100%;
+  transition: 1s;
+  transition-delay: 1s;
+}
+#project-pre:checked ~ .app-container #project-iframe1 {
+  display: block;
+}
+#project-pre:checked ~ .app-container #project-box-effect2 {
+  display: none;
+}
+#project-pre:checked ~ .app-container .project-box-dot2 {
+  display: none;
+}
+#project-pre:checked ~ .app-container .project-box-dot2-2 {
+  display: block;
+}
+#project-pre:checked ~ .app-container .project-box-X2 {
+  display: block;
+  animation: effectwait .5s ease;
+}
+#project-pre:checked ~ .app-container .project-box1 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+#project-pre:checked ~ .app-container .project-box3 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
 
 
+
+#project-eva:checked ~ .app-container .project-box3 {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 4;
+}
+#project-eva:checked ~ .app-container #project-box-effect3 {
+  display: none;
+}
+#project-eva:checked ~ .app-container .project-box-dot3 {
+  display: none;
+}
+#project-eva:checked ~ .app-container .project-box-dot3-2 {
+  display: block;
+}
+#project-eva:checked ~ .app-container .project-box-X3 {
+  display: block;
+  animation: effectwait .5s ease;
+}
+#project-eva:checked ~ .app-container .project-box2 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+#project-eva:checked ~ .app-container .project-box1 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
 
 
 
@@ -515,7 +701,7 @@
   cursor: pointer;
   z-index: 3;
   opacity: 100%;
-  transition: 1s;
+  transition: .7s;
   /* transition-delay: .8s; */
 }
 /* #project-dark:checked ~ .app-container .project-box1-up {
@@ -569,7 +755,7 @@
   cursor: pointer;
   z-index: 3;
   opacity: 100%;
-  transition: 1s;
+  transition: .7s;
   /* transition-delay: .8s; */
 }
 #project-dark:checked ~ .app-container .project-box3 {
@@ -585,6 +771,6 @@
   cursor: pointer;
   z-index: 3;
   opacity: 100%;
-  transition: 1s;
+  transition: .7s;
   /* transition-delay: .8s; */
 }

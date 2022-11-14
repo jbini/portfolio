@@ -39,5 +39,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type='text/javascript'>
+      const mm = document.getElementById('MAP-main');
+      const ia = document.getElementById('iframeaudio');
+      mm.addEventListener('click', reloadAudio);
+      function reloadAudio() {
+        ia.contentDocument.location.reload(true);
+      };
+      function reloadAudio() {
+        window.frames['audioIframe'].location.reload();
+      };
+    </script>
   </body>
 </html>

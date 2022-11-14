@@ -12,7 +12,7 @@ let mainimg2 = main2me
 export default function Main() {
     return(
         
-        <div className='main-cover-container'>
+        <div className='main-cover-container' id='twoPair'>
           <Keyboardiframe />
 
           {/* <div className='main-cover-imgbox'>

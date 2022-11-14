@@ -1,7 +1,10 @@
 import '../css/Projectinfo.css';
+import ReactPlayer from 'react-player'
 
 
-export default function Projectinfo() {
+                    
+
+export default function Projectinfo(props) {
     return(
         <div className='project-cover-container'>
 
@@ -38,8 +41,10 @@ export default function Projectinfo() {
                 <label className='project-box-X2' for='project-dark'><h3>X</h3></label>
                 <h3>PREVIEW</h3>
                 <div className='project-box-content2'>
-                    <iframe id='project-iframe1' width="100%" height="100%" src="https://www.youtube.com/embed/qOqlykY3bWE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {/* <iframe id='projectIframe1' width="100%" height="100%" src="https://www.youtube.com/embed/qOqlykY3bWE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                    <ReactPlayer id='projectIframe1' url='https://www.youtube.com/embed/qOqlykY3bWE' width="100%" height="100%" controls />
                 </div>
+                
                 
             </label>
 

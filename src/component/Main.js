@@ -10,10 +10,11 @@ let mainimg = main2
 let mainimg2 = main2me
 
 export default function Main() {
+  
     return(
         
-        <div className='main-cover-container' id='twoPair'>
-          <Keyboardiframe />
+        <div className='main-cover-container'>
+          
 
           {/* <div className='main-cover-imgbox'>
               <img src={mainimg} alt='mainimg'></img>
@@ -66,12 +67,11 @@ export default function Main() {
               <h5>배움을 얻을수록 전에는 보이지 않던 것들이 보여 자신감이 생겼습니다.</h5>
               <h5>끊임없이 배우는 개발자의 영역에서 새로운 역량을 키워낼 것입니다.</h5></div>
 
-          </div>
+          </div> 
 
-          {/* <Link to='/About' id='toabout'>
-            <div className='toabout-box'></div>
-          </Link> */}
+          
 
+          
         </div>
     );
 }

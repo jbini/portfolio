@@ -9,7 +9,10 @@
   overflow: hidden;
   position: relative;
 }
-
+#iframeaudio {
+  display: none;
+  border: none;
+}
 
 /* 폰트 출처 구글 폰트 */
 @font-face {

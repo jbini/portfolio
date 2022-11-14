@@ -266,7 +266,7 @@
 
 
 .project-box-content2 {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   position: absolute;
   top: calc(3vmax + 10px);
   left: calc(1vmax + 8px);
@@ -275,7 +275,7 @@
   height: calc(21.5vmax + 70px);
   opacity: 0%;
 }
-#project-iframe1 {
+#projectIframe1 {
   display: none;
 }
 
@@ -495,7 +495,7 @@
   transition: 1s;
   transition-delay: 1s;
 }
-#project-pre:checked ~ .app-container #project-iframe1 {
+#project-pre:checked ~ .app-container #projectIframe1 {
   display: block;
 }
 #project-pre:checked ~ .app-container #project-box-effect2 {

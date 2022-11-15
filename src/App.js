@@ -10,7 +10,7 @@ import main2me from './img/main2-2.jpg'
 import keyboard1 from './audio/keyboardsound1.mp3'
 import keyboard2 from './audio/keyboardsound2.mp3'
 import Projectinfo from './component/Projectinfo';
-// import {projectI} from './component/Projectinfo';
+import {projectI} from './component/Projectinfo';
 // import './MainClick';
 import Keyboardiframe from './component/Keyboardiframe'
 import Keyboardiframetwo from './component/Keyboardiframetwo'
@@ -36,8 +36,13 @@ function App() {
   // }
   let KS = keyboard1;
   
-  let projectI = document.getElementById('projectIframe1');
+  // let projectI = document.getElementById('projectIframe1');
   let PP = projectI;
+
+  function reloadFunction() {
+    ("projectIframe1").load(window.location.href + "#projectIframe1");
+  }
+
 
   function changeSound() {
     // KS = KS === keyboard1 ? keyboard2 : keyboard1;
@@ -47,7 +52,7 @@ function App() {
   function reloadPreview() {
     // KS = KS === keyboard1 ? keyboard2 : keyboard1;
     console.log(PP);
-    document.getElementById(PP).contentDocument.location.reload(true);
+    document.getElementById(PP).load(window.location.href + "#projectIframe1");
   }
 
   return (

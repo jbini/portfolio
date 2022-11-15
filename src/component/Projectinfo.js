@@ -2,6 +2,9 @@ import '../css/Projectinfo.css';
 import ReactPlayer from 'react-player'
 
 
+export let projectI = document.getElementById('projectIframe1');
+
+
                     
 
 export default function Projectinfo(props) {

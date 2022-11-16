@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d10e4536.css",
-    "main.js": "/portfolio/static/js/main.7bb18f2e.js",
+    "main.css": "/portfolio/static/css/main.43a279fc.css",
+    "main.js": "/portfolio/static/js/main.89c68b7a.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Eatmotion.mp4": "/portfolio/static/media/Eatmotion.6e71038d3203ff6b5b59.mp4",
     "static/media/main2.jpg": "/portfolio/static/media/main2.2a7613f7491424806331.jpg",
     "static/media/main2-2.jpg": "/portfolio/static/media/main2-2.121b35026c4d02e2f0a2.jpg",
     "static/media/RobotoCondensed-Regular.ttf": "/portfolio/static/media/RobotoCondensed-Regular.fc3d2f2e3a203d0037c1.ttf",
@@ -10,12 +11,12 @@
     "static/media/keyboardsound1.mp3": "/portfolio/static/media/keyboardsound1.415b501ecc506daad75f.mp3",
     "static/media/keyboardsound2.mp3": "/portfolio/static/media/keyboardsound2.415b501ecc506daad75f.mp3",
     "index.html": "/portfolio/index.html",
-    "main.d10e4536.css.map": "/portfolio/static/css/main.d10e4536.css.map",
-    "main.7bb18f2e.js.map": "/portfolio/static/js/main.7bb18f2e.js.map",
+    "main.43a279fc.css.map": "/portfolio/static/css/main.43a279fc.css.map",
+    "main.89c68b7a.js.map": "/portfolio/static/js/main.89c68b7a.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d10e4536.css",
-    "static/js/main.7bb18f2e.js"
+    "static/css/main.43a279fc.css",
+    "static/js/main.89c68b7a.js"
   ]
 }

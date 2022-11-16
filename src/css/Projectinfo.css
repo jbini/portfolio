@@ -39,7 +39,7 @@
   cursor: pointer;
   z-index: 3;
   transition: .7s;
-  animation: projectbox1 2.5s ease;
+  animation: projectbox1 2s ease;
 }
 @keyframes projectbox1{
   0% {
@@ -75,7 +75,7 @@
   cursor: pointer;
   z-index: 3;
   transition: .7s;
-  animation: projectbox2 2.5s ease;
+  animation: projectbox2 2s ease;
 }
 @keyframes projectbox2{
   0% {
@@ -111,7 +111,7 @@
   cursor: pointer;
   z-index: 3;
   transition: .7s;
-  animation: projectbox3 2.5s ease;
+  animation: projectbox3 2s ease;
 }
 @keyframes projectbox3{
   0% {
@@ -263,7 +263,16 @@
   display: none;
   cursor: pointer;
 }
-
+.project-box-content1 {
+  background-color: #ffffff;
+  position: absolute;
+  top: calc(3vmax + 10px);
+  left: calc(1vmax + 8px);
+  display: block;
+  width: calc(38vmax + 144px);
+  height: calc(21.5vmax + 70px);
+  opacity: 0%;
+}
 
 .project-box-content2 {
   /* background-color: #ffffff; */
@@ -279,6 +288,16 @@
   display: none;
 }
 
+.project-box-content3 {
+  background-color: #ffffff;
+  position: absolute;
+  top: calc(2.4vmax + 10px);
+  left: calc(1vmax + 8px);
+  display: block;
+  width: calc(38vmax + 144px);
+  height: calc(20.5vmax + 60px);
+  opacity: 0%;
+}
 
 
 
@@ -432,6 +451,11 @@
   transition: 1s;
   z-index: 4;
 }
+#project-info:checked ~ .app-container .project-box-content1 {
+  opacity: 100%;
+  transition: 1s;
+  transition-delay: 1s;
+}
 #project-info:checked ~ .app-container #project-box-effect1 {
   display: none;
 }
@@ -443,7 +467,7 @@
 }
 #project-info:checked ~ .app-container .project-box-X1 {
   display: block;
-  animation: effectwait .5s ease;
+  animation: effectwait 1s ease;
 }
 #project-info:checked ~ .app-container .project-box2 {
   background-color: rgba(50, 50, 50, .2);
@@ -473,6 +497,7 @@
   opacity: 0%;
   animation: boxhide 1s ease;
 }
+
 
 
 
@@ -509,7 +534,7 @@
 }
 #project-pre:checked ~ .app-container .project-box-X2 {
   display: block;
-  animation: effectwait .5s ease;
+  animation: effectwait 1s ease;
 }
 #project-pre:checked ~ .app-container .project-box1 {
   background-color: rgba(50, 50, 50, .2);
@@ -542,6 +567,8 @@
 
 
 
+
+
 #project-eva:checked ~ .app-container .project-box3 {
   background-color: rgba(2, 2, 2, .4);
   position: absolute;
@@ -555,6 +582,11 @@
   transition: 1s;
   z-index: 4;
 }
+#project-eva:checked ~ .app-container .project-box-content3 {
+  opacity: 100%;
+  transition: 1s;
+  transition-delay: 1s;
+}
 #project-eva:checked ~ .app-container #project-box-effect3 {
   display: none;
 }
@@ -566,7 +598,7 @@
 }
 #project-eva:checked ~ .app-container .project-box-X3 {
   display: block;
-  animation: effectwait .5s ease;
+  animation: effectwait 1s ease;
 }
 #project-eva:checked ~ .app-container .project-box2 {
   background-color: rgba(50, 50, 50, .2);

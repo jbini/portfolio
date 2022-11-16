@@ -32,6 +32,7 @@ export default function Projectinfo() {
                 <label className='project-box-X1' for='project-dark'><h3>X</h3></label>
                 {/* <div className='project-box-dot4'></div> */}
                 <h3>INFORMATION</h3>
+                <div className='project-box-content1'></div>
             </label>
             {/* <div className='project-box1-up' id='projectboxup'>
                 <div className='project-box-dot1-2'></div>
@@ -67,6 +68,7 @@ export default function Projectinfo() {
                 <div className='project-box-dot3-2'></div>
                 <label className='project-box-X3' for='project-dark'><h3>X</h3></label>
                 <h3>EVALUATION</h3>
+                <div className='project-box-content3'></div>
             </label>
 
         </div>

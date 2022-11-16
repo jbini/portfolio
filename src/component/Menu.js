@@ -1,6 +1,6 @@
 import '../css/Menu.css';
 import {Link} from 'react-router-dom';
-
+import { videoPause } from './Projectinfo';
 
 export default function Menu() {
 
@@ -9,7 +9,7 @@ export default function Menu() {
 
           <div className='menu-list-box'>
             <div className='menu-list-line'>
-              <label for='MAP-main' id='main1'><h2 id='list-line-1'>M</h2><h2>ain</h2></label>
+              <label for='MAP-main' id='main1' onClick={videoPause}><h2 id='list-line-1'>M</h2><h2>ain</h2></label>
               {/* <label for='MAP-project-main' id='main2'><h2 id='list-line-1'>M</h2><h2>ain</h2></label> */}
               <div className='underline-box' id='underline-box1'>
                 <div className='underline-1'></div>
@@ -18,7 +18,7 @@ export default function Menu() {
             </div>
 
             <div className='menu-list-line'>
-              <label for='MAP-about'><h2 id='list-line-2'>A</h2><h2>bout</h2></label>
+              <label for='MAP-about'><h2 id='list-line-2' onClick={videoPause}>A</h2><h2>bout</h2></label>
               <div className='underline-box' id='underline-box2'>
                 <div className='underline-1'></div>
                 <div className='underline-2'></div>
@@ -26,7 +26,7 @@ export default function Menu() {
             </div>
 
             <div className='menu-list-line'>
-              <label for='MAP-project'><h2 id='list-line-3'>P</h2><h2>roject</h2></label>
+              <label for='MAP-project' onClick={videoPause}><h2 id='list-line-3'>P</h2><h2>roject</h2></label>
               <div className='underline-box' id='underline-box3'>
                 <div className='underline-1'></div>
                 <div className='underline-2'></div>

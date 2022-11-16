@@ -1,20 +1,25 @@
 import '../css/Projectinfo.css';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+import eatmotion from '../video/Eatmotion.mp4';
+import $ from 'jquery';
 
 
-export let projectI = document.getElementById('projectIframe1');
+// export let projectI = document.getElementById('projectIframe1');
 
+export function videoPause() {
+    $('#projectIframe1').get(0).pause();
+};
 
                     
 
-export default function Projectinfo(props) {
+export default function Projectinfo() {
     return(
         <div className='project-cover-container'>
 
             {/* <input type='checkbox' name='boxclick1' id='box-click1' />
             <input type='checkbox' name='boxclick2' id='box-click2' />
             <input type='checkbox' name='boxclick3' id='box-click3' /> */}
-            <label className='project-darkbg' id='project-darkbg1' for='project-dark'></label>
+            <label className='project-darkbg' id='project-darkbg1' for='project-dark' onClick={videoPause}></label>
 
             <label className='project-box1' id='projectbox' for='project-info'>
                 <div className='project-box-effect1' id='project-box-effect1'></div>
@@ -41,11 +46,12 @@ export default function Projectinfo(props) {
                 <div className='project-box-effect5' id='project-box-effect2'></div>
                 <div className='project-box-dot2'></div>
                 <div className='project-box-dot2-2'></div>
-                <label className='project-box-X2' for='project-dark'><h3>X</h3></label>
+                <label className='project-box-X2' for='project-dark' onClick={videoPause}><h3>X</h3></label>
                 <h3>PREVIEW</h3>
                 <div className='project-box-content2'>
                     {/* <iframe id='projectIframe1' width="100%" height="100%" src="https://www.youtube.com/embed/qOqlykY3bWE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                    <ReactPlayer id='projectIframe1' url='https://www.youtube.com/embed/qOqlykY3bWE' width="100%" height="100%" controls />
+                    {/* <ReactPlayer id='projectIframe1' url='https://www.youtube.com/embed/qOqlykY3bWE' width="100%" height="100%" controls /> */}
+                    <video id='projectIframe1' src={eatmotion} controls width="100%" height="100%" />
                 </div>
                 
                 

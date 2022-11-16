@@ -10,11 +10,13 @@ import main2me from './img/main2-2.jpg'
 import keyboard1 from './audio/keyboardsound1.mp3'
 import keyboard2 from './audio/keyboardsound2.mp3'
 import Projectinfo from './component/Projectinfo';
-import {projectI} from './component/Projectinfo';
+import { videoPause } from './component/Projectinfo';
+// import {projectI} from './component/Projectinfo';
 // import './MainClick';
 import Keyboardiframe from './component/Keyboardiframe'
 import Keyboardiframetwo from './component/Keyboardiframetwo'
 import { useRef } from 'react';
+import $ from 'jquery';
 
 
 // document.getElementById('MAP-main').addEventListener('click', function(){
@@ -37,7 +39,7 @@ function App() {
   let KS = keyboard1;
   
   // let projectI = document.getElementById('projectIframe1');
-  let PP = projectI;
+  // let PP = projectI;
 
   function reloadFunction() {
     ("projectIframe1").load(window.location.href + "#projectIframe1");
@@ -49,11 +51,10 @@ function App() {
     // console.log(KS);
     document.getElementById("iframeaudio").contentDocument.location.reload(true);
   }
-  function reloadPreview() {
-    // KS = KS === keyboard1 ? keyboard2 : keyboard1;
-    console.log(PP);
-    document.getElementById(PP).load(window.location.href + "#projectIframe1");
-  }
+  // function reloadPreview() {
+  //   console.log(PP);
+  //   document.getElementById(PP).load(window.location.href + "#projectIframe1");
+  // }
 
   return (
       <div className="main">
@@ -69,7 +70,7 @@ function App() {
           <input type='radio' name='MAP-radio' id='project-info'></input>
           <input type='radio' name='MAP-radio' id='project-pre'></input>
           <input type='radio' name='MAP-radio' id='project-eva'></input>
-          <input type='radio' name='MAP-radio' id='project-dark' onClick={reloadPreview}></input>
+          <input type='radio' name='MAP-radio' id='project-dark'></input>
           <input type='radio' name='MAP-radio' id='MAP-main-project'></input>
           <input type='radio' name='MAP-radio' id='MAP-project-main'></input>
 
@@ -90,7 +91,7 @@ function App() {
           <label className='main-about' for='MAP-about'/>
           <label className='about-main' for='MAP-main' id='aceCard' />
           <label className='about-project' for='MAP-project' />
-          <label className='project-about' for='MAP-about' />
+          <label className='project-about' for='MAP-about' onClick={videoPause} />
           
         </div>
       </div>

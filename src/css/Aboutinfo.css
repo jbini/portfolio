@@ -27,6 +27,15 @@
   font-weight: 100;
   color: #ececec;
 }
+.about-second-box h5 {
+  display: block;
+  margin: 0;
+  margin-top: 5px;
+  font-family: 'ONE-Mobile-Title';
+  font-size: calc(.8vmax + 2px);
+  font-weight: 100;
+  color: #ececec;
+}
 .about-cover-imgbox {
   position: relative;
   display: block;
@@ -459,11 +468,19 @@
   left: calc(23% + 10vmax);
   display: block;
   opacity: 0%;
+  z-index: 5;
 }
 .about-second-line1 {
   position: absolute;
   top: calc(2vmax + 20px);
-  left: calc(-3vmax - 20px);
+  left: calc(-5vmax + 30px);
+  display: block;
+  width: calc(22vmax + 170px);
+}
+.about-second-line2 {
+  position: absolute;
+  top: calc(7vmax + 30px);
+  left: calc(-8vmax + 36px);
   display: block;
   width: calc(22vmax + 170px);
 }
@@ -676,7 +693,7 @@
 
 /* 버튼1 체크 효과 */
 #line-btn1:checked ~ .app-container .about-cover-line-box {
-  left: 60%;
+  left: 63%;
   transition: 2.2s;
 }
 #line-btn1:checked ~ .app-container .about-cover-line-box2 {

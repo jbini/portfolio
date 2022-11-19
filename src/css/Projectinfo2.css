@@ -1,0 +1,808 @@
+
+/* 메인 배경 */
+.project-cover-container {
+  position: absolute;
+  top: 200vh;
+  left: 0;
+  display: block;
+  width: calc(85vmax - 50px);
+  height: 100vh;
+  overflow: hidden;
+}
+.project-cover-container input {
+  display: none;
+}
+
+
+
+/* 클릭 박스 */
+.project-box1 {
+  display: none;
+}
+.project-box2 {
+  display: none;
+}
+.project-box3 {
+  display: none;
+}
+
+#MAP-project:checked ~ .app-container .project-box1 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  transition: .7s;
+  animation: projectbox1 2s ease;
+}
+@keyframes projectbox1{
+  0% {
+    top: 12%;
+    left: 45%;
+    opacity: 0%;
+  }
+  20% {
+    top: 12%;
+    left: 45%;
+    opacity: 0%;
+  }
+  50% {
+    top: 12%;
+    left: 45%;
+  }
+  100% {
+    top: 20%;
+    left: 15%;
+  }
+}
+
+#MAP-project:checked ~ .app-container .project-box2 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  transition: .7s;
+  animation: projectbox2 2s ease;
+}
+@keyframes projectbox2{
+  0% {
+    top: 18%;
+    left: 45%;
+    opacity: 0%;
+  }
+  20% {
+    top: 18%;
+    left: 45%;
+    opacity: 0%;
+  }
+  50% {
+    top: 18%;
+    left: 45%;
+  }
+  100% {
+    top: 35%;
+    left: 65%;
+  }
+}
+
+#MAP-project:checked ~ .app-container .project-box3 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  transition: .7s;
+  animation: projectbox3 2s ease;
+}
+@keyframes projectbox3{
+  0% {
+    top: 24%;
+    left: 45%;
+    opacity: 0%;
+  }
+  20% {
+    top: 24%;
+    left: 45%;
+    opacity: 0%;
+  }
+  50% {
+    top: 24%;
+    left: 45%;
+  }
+  100% {
+    top: 70%;
+    left: 30%;
+  }
+}
+
+.project-box1 h3 {
+  position: absolute;
+  top: calc(1.2vmax + 4px);
+  left: calc(4vmax + 10px);
+  transform: translate(-50%, -50%);
+  font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+  user-select: none;
+}
+.project-box2 h3 {
+  position: absolute;
+  top: calc(1.2vmax + 4px);
+  right: calc(4vmax + 10px);
+  transform: translate(50%, -50%);
+  font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+  user-select: none;
+}
+.project-box3 h3 {
+  position: absolute;
+  bottom: calc(1.2vmax + 4px);
+  left: calc(4vmax + 10px);
+  transform: translate(-50%, 50%);
+  font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+  user-select: none;
+}
+
+.project-box-dot1 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  left: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot1-2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  left: -0.3vmax;
+  display: none;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  rotate: 45deg;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  right: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot2-2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -0.3vmax;
+  right: -0.3vmax;
+  display: none;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  rotate: 45deg;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot3 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -0.3vmax;
+  left: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot3-2 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -0.3vmax;
+  left: -0.3vmax;
+  display: none;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  rotate: 45deg;
+  /* border-radius: .2vmax; */
+}
+.project-box-dot4 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -0.3vmax;
+  right: -0.3vmax;
+  display: block;
+  width: .6vmax;
+  height: .6vmax;
+  transition: .3s;
+  /* border-radius: .2vmax; */
+}
+.project-box-X1 {
+  position: absolute;
+  top: 0;
+  right: calc(5vmax + 15px);
+  display: none;
+  cursor: pointer;
+}
+.project-box-X2 {
+  position: absolute;
+  top: 0;
+  left: calc(5vmax + 15px);
+  display: none;
+  cursor: pointer;
+}
+.project-box-X3 {
+  position: absolute;
+  top: calc(2.4vmax + 8px);
+  right: calc(5vmax + 15px);
+  display: none;
+  cursor: pointer;
+}
+.project-box-content1 {
+  background-color: #ffffff;
+  position: absolute;
+  top: calc(3vmax + 10px);
+  left: calc(1vmax + 8px);
+  display: block;
+  width: calc(38vmax + 144px);
+  height: calc(21.5vmax + 70px);
+  opacity: 0%;
+}
+
+.project-box-content2 {
+  /* background-color: #ffffff; */
+  position: absolute;
+  top: calc(3vmax + 10px);
+  left: calc(1vmax + 8px);
+  display: block;
+  width: calc(38vmax + 144px);
+  height: calc(21.5vmax + 70px);
+  opacity: 0%;
+}
+#projectIframe1 {
+  display: none;
+}
+
+.project-box-content3 {
+  background-color: #ffffff;
+  position: absolute;
+  top: calc(2.4vmax + 10px);
+  left: calc(1vmax + 8px);
+  display: block;
+  width: calc(38vmax + 144px);
+  height: calc(20.5vmax + 60px);
+  opacity: 0%;
+}
+
+
+
+
+/* 박스 hover 효과 */
+#MAP-project:checked ~ .app-container #projectbox:hover {
+  background-color: rgba(2, 2, 2, .4);
+}
+#project-dark:checked ~ .app-container #projectbox:hover {
+  background-color: rgba(2, 2, 2, .4);
+}
+@keyframes effectwait {
+  0% {
+    opacity: 0%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.project-box-effect1 {
+  background-color: #ffffff;
+  position: absolute;
+  left: -3vmax;
+  display: block;
+  width: 3vmax;
+  height: 0.1vmax;
+  animation: effectwait .5s ease;
+}
+.project-box-effect2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -3vmax;
+  display: block;
+  width: 0.1vmax;
+  height: 3vmax;
+  animation: effectwait .5s ease;
+}
+.project-box-effect3 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -4vmax;
+  right: 0;
+  display: block;
+  width: 0.1vmax;
+  height: 3vmax;
+  animation: effectwait .5s ease;
+}
+.project-box-effect4 {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: -4vmax;
+  display: block;
+  width: 3vmax;
+  height: 0.1vmax;
+  animation: effectwait .5s ease;
+}
+
+#projectbox:hover .project-box-effect1 {
+  left: calc(14vmax + 20px);
+  transition: .6s;
+}
+#projectbox:hover .project-box-effect2 {
+  top: calc(9.2vmax + 8px);
+  transition: .6s;
+}
+#projectbox:hover .project-box-effect3 {
+  top: calc(5.2vmax + 8px);
+  transition: .6s;
+  transition-delay: .12s;
+}
+#projectbox:hover .project-box-effect4 {
+  left: calc(10vmax + 20px);
+  transition: .6s;
+  transition-delay: .05s;
+}
+
+
+.project-box-effect5 {
+  background-color: #ffffff;
+  position: absolute;
+  top: -1.4vmax;
+  left: calc(-2vmax - 10px);
+  display: block;
+  width: 1vmax;
+  height: calc(5vmax + 10px);
+  rotate: 30deg;
+  opacity: 90%;
+  animation: effectwait .5s ease;
+}
+#projectbox:hover .project-box-effect5 {
+  left: calc(10vmax + 20px);
+  transition: .6s;
+}
+
+
+#projectbox:hover .project-box-dot1 {
+  /* top: -1vmax;
+  left: -1vmax; */
+  rotate: 45deg;
+  transition: .6s;
+}
+#projectbox:hover .project-box-dot2 {
+  /* top: -1vmax;
+  right: -1vmax; */
+  rotate: -45deg;
+  transition: .6s;
+}
+#projectbox:hover .project-box-dot3 {
+  /* bottom: -1vmax;
+  left: -1vmax; */
+  rotate: -45deg;
+  transition: .6s;
+}
+#projectbox:hover .project-box-dot4 {
+  /* bottom: -1vmax;
+  right: -1vmax; */
+  rotate: 45deg;
+  transition: .6s;
+}
+
+
+
+
+
+/* 박스 클릭 효과 */
+@keyframes boxhide {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+#project-info:checked ~ .app-container .project-box1 {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 4;
+}
+#project-info:checked ~ .app-container .project-box-content1 {
+  opacity: 100%;
+  transition: 1s;
+  transition-delay: 1s;
+}
+#project-info:checked ~ .app-container #project-box-effect1 {
+  display: none;
+}
+#project-info:checked ~ .app-container .project-box-dot1 {
+  display: none;
+}
+#project-info:checked ~ .app-container .project-box-dot1-2 {
+  display: block;
+}
+#project-info:checked ~ .app-container .project-box-X1 {
+  display: block;
+  animation: effectwait 1s ease;
+}
+#project-info:checked ~ .app-container .project-box2 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+#project-info:checked ~ .app-container .project-box3 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+
+
+
+
+
+#project-pre:checked ~ .app-container .project-box2 {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 4;
+}
+#project-pre:checked ~ .app-container .project-box-content2 {
+  opacity: 100%;
+  transition: 1s;
+  transition-delay: 1s;
+}
+#project-pre:checked ~ .app-container #projectIframe1 {
+  display: block;
+}
+#project-pre:checked ~ .app-container #project-box-effect2 {
+  display: none;
+}
+#project-pre:checked ~ .app-container .project-box-dot2 {
+  display: none;
+}
+#project-pre:checked ~ .app-container .project-box-dot2-2 {
+  display: block;
+}
+#project-pre:checked ~ .app-container .project-box-X2 {
+  display: block;
+  animation: effectwait 1s ease;
+}
+#project-pre:checked ~ .app-container .project-box1 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+#project-pre:checked ~ .app-container .project-box3 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+
+
+
+
+
+#project-eva:checked ~ .app-container .project-box3 {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 4;
+}
+#project-eva:checked ~ .app-container .project-box-content3 {
+  opacity: 100%;
+  transition: 1s;
+  transition-delay: 1s;
+}
+#project-eva:checked ~ .app-container #project-box-effect3 {
+  display: none;
+}
+#project-eva:checked ~ .app-container .project-box-dot3 {
+  display: none;
+}
+#project-eva:checked ~ .app-container .project-box-dot3-2 {
+  display: block;
+}
+#project-eva:checked ~ .app-container .project-box-X3 {
+  display: block;
+  animation: effectwait 1s ease;
+}
+#project-eva:checked ~ .app-container .project-box2 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+#project-eva:checked ~ .app-container .project-box1 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0%;
+  animation: boxhide 1s ease;
+}
+
+
+
+.project-darkbg {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#project-info:checked ~ .app-container #project-darkbg1 {
+  display: block;
+  animation: darkbgopacity .5s ease;
+  z-index: 2;
+}
+#project-pre:checked ~ .app-container #project-darkbg1 {
+  display: block;
+  animation: darkbgopacity .5s ease;
+  z-index: 2;
+}
+#project-eva:checked ~ .app-container #project-darkbg1 {
+  display: block;
+  animation: darkbgopacity .5s ease;
+  z-index: 2;
+}
+@keyframes darkbgopacity {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+/* .project-box1-up {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: none;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  z-index: 4;
+} 
+#projectboxup h3 {
+  position: absolute;
+  top: calc(1.2vmax + 4px);
+  left: calc(4vmax + 10px);
+  transform: translate(-50%, -50%);
+  font-size: calc(1.2vmax + 4px);
+  color: #ffffff;
+  user-select: none;
+}
+#project-info:checked ~ .app-container .project-box1-up {
+  display: block;
+  animation: projectbox1up 2s ease;
+}
+@keyframes projectbox1up {
+  0% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+  }
+  40% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+  }
+  100% {
+    top: 23%;
+    left: 20%;
+    width: calc(40vmax + 160px);
+    height: calc(25vmax + 100px);
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+/* 버튼 초기화 */
+#project-dark:checked ~ .app-container .project-box1 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 100%;
+  transition: .7s;
+  /* transition-delay: .8s; */
+}
+/* #project-dark:checked ~ .app-container .project-box1-up {
+  background-color: rgba(2, 2, 2, .4);
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  display: block;
+  width: calc(40vmax + 160px);
+  height: calc(25vmax + 100px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  opacity: 0%;
+  z-index: 0;
+  animation: projectbox1down 1s ease;
+}
+@keyframes projectbox1down {
+  0% {
+    top: 23%;
+    left: 20%;
+    width: calc(40vmax + 160px);
+    height: calc(25vmax + 100px);
+    opacity: 100%;
+  }
+  99% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+    opacity: 100%;
+  }
+  100% {
+    top: 20%;
+    left: 15%;
+    width: calc(8vmax + 20px);
+    height: calc(2.4vmax + 8px);
+    opacity: 0%;
+  }
+} */
+
+#project-dark:checked ~ .app-container .project-box2 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 100%;
+  transition: .7s;
+  /* transition-delay: .8s; */
+}
+#project-dark:checked ~ .app-container .project-box3 {
+  background-color: rgba(50, 50, 50, .2);
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  width: calc(8vmax + 20px);
+  height: calc(2.4vmax + 8px);
+  border-radius: 0.2vmax;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 100%;
+  transition: .7s;
+  /* transition-delay: .8s; */
+}

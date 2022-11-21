@@ -475,14 +475,14 @@
   top: calc(2vmax + 20px);
   left: calc(-5vmax + 30px);
   display: block;
-  width: calc(22vmax + 170px);
+  width: calc(24vmax + 180px);
 }
 .about-second-line2 {
   position: absolute;
   top: calc(7vmax + 30px);
   left: calc(-8vmax + 36px);
   display: block;
-  width: calc(22vmax + 170px);
+  width: calc(24vmax + 180px);
 }
 
 
@@ -693,7 +693,7 @@
 
 /* 버튼1 체크 효과 */
 #line-btn1:checked ~ .app-container .about-cover-line-box {
-  left: 63%;
+  left: 64%;
   transition: 2.2s;
 }
 #line-btn1:checked ~ .app-container .about-cover-line-box2 {

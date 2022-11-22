@@ -161,6 +161,25 @@
   color: #ffffff;
   user-select: none;
 }
+.project-cover-container h4 {
+  display: block;
+  position: absolute;
+  bottom: calc(0.4vmax + 4px);
+  margin: 0;
+  font-family: 'RobotoR';
+  font-size: calc(1.1vmax + 4px);
+  color: #ffffff;
+}
+.project-cover-container h5 {
+  display: block;
+  position: absolute;
+  bottom: calc(0.4vmax + 4px);
+  margin: 0;
+  font-family: 'ONE-Mobile-Title';
+  font-size: calc(0.7vmax + 2px);
+  font-weight: 100;
+  color: #c0c0c0;
+}
 
 .project-box-dot1 {
   background-color: #ffffff;
@@ -273,7 +292,96 @@
   height: calc(21.5vmax + 70px);
   opacity: 0%;
 }
+.project-box-content-img {
+  position: absolute;
+  top: 4.4%;
+  left: 31%;
+  display: block;
+  width: 20%;
+}
+.project-box-content-img img {
+  width: 100%;
+}
 
+.project-box-content-name1 {
+  position: absolute;
+  top: 5%;
+  display: block;
+  width: 20%;
+  height: 7%;
+}
+.project-box-content-name2 {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+
+.project-box-content-sdate1 {
+  position: absolute;
+  top: 12%;
+  display: block;
+  width: 20%;
+  height: 7%;
+}
+.project-box-content-sdate2 {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+
+.project-box-content-back1 {
+  position: absolute;
+  top: 19%;
+  display: block;
+  width: 20%;
+  height: 7%;
+}
+.project-box-content-back2 {
+  position: absolute;
+  top: 19%;
+  left: 20%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+
+.project-box-content-front1 {
+  position: absolute;
+  top: 26%;
+  display: block;
+  width: 20%;
+  height: 7%;
+}
+.project-box-content-front2 {
+  position: absolute;
+  top: 26%;
+  left: 20%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+
+.project-box-content-member1 {
+  position: absolute;
+  top: 33%;
+  display: block;
+  width: 20%;
+  height: 7%;
+}
+.project-box-content-member2 {
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
 
 
 

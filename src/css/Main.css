@@ -257,7 +257,7 @@
 
 
 .main-cover-underline {
-  background-color: rgb(101, 240, 159);
+  background-color: #1eff96;
   position: absolute;
   top: calc(2.7vmax + 10px);
   display: block;
@@ -282,7 +282,7 @@
   }
 }
 #MAP-main:checked ~ .app-container .main-cover-underline {
-  background-color: rgb(101, 240, 159);
+  background-color: #1eff96;
   position: absolute;
   top: calc(2.7vmax + 10px);
   display: block;

@@ -693,7 +693,7 @@
 
 /* 버튼1 체크 효과 */
 #line-btn1:checked ~ .app-container .about-cover-line-box {
-  left: 64%;
+  left: 66%;
   transition: 2.2s;
 }
 #line-btn1:checked ~ .app-container .about-cover-line-box2 {

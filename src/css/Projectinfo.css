@@ -174,7 +174,7 @@
   /* border-radius: .2vmax; */
 }
 .project-box-dot1-2 {
-  background-color: #ffffff;
+  background-color: #c588ff;
   position: absolute;
   top: -0.3vmax;
   left: -0.3vmax;
@@ -197,7 +197,7 @@
   /* border-radius: .2vmax; */
 }
 .project-box-dot2-2 {
-  background-color: #ffffff;
+  background-color: #c588ff;
   position: absolute;
   top: -0.3vmax;
   right: -0.3vmax;
@@ -220,7 +220,7 @@
   /* border-radius: .2vmax; */
 }
 .project-box-dot3-2 {
-  background-color: #ffffff;
+  background-color: #c588ff;
   position: absolute;
   bottom: -0.3vmax;
   left: -0.3vmax;
@@ -264,7 +264,7 @@
   cursor: pointer;
 }
 .project-box-content1 {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   position: absolute;
   top: calc(3vmax + 10px);
   left: calc(1vmax + 8px);
@@ -273,6 +273,9 @@
   height: calc(21.5vmax + 70px);
   opacity: 0%;
 }
+
+
+
 
 .project-box-content2 {
   /* background-color: #ffffff; */
@@ -400,24 +403,28 @@
 #projectbox:hover .project-box-dot1 {
   /* top: -1vmax;
   left: -1vmax; */
+  background-color: #c588ff;
   rotate: 45deg;
   transition: .6s;
 }
 #projectbox:hover .project-box-dot2 {
   /* top: -1vmax;
   right: -1vmax; */
+  background-color: #c588ff;
   rotate: -45deg;
   transition: .6s;
 }
 #projectbox:hover .project-box-dot3 {
   /* bottom: -1vmax;
   left: -1vmax; */
+  background-color: #c588ff;
   rotate: -45deg;
   transition: .6s;
 }
 #projectbox:hover .project-box-dot4 {
   /* bottom: -1vmax;
   right: -1vmax; */
+  background-color: #c588ff;
   rotate: 45deg;
   transition: .6s;
 }

@@ -481,7 +481,6 @@
 }
 
 .project-box-content3 {
-  background-color: #ffffff;
   position: absolute;
   top: calc(2.4vmax + 10px);
   left: calc(1vmax + 8px);
@@ -489,6 +488,49 @@
   width: calc(38vmax + 144px);
   height: calc(20.5vmax + 60px);
   opacity: 0%;
+}
+.project-box-content3 h4 {
+  font-family: 'ONE-Mobile-Title';
+  font-weight: 100;
+}
+.project-box-content3 h5 {
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-top: calc(0.2vmax + 2px);
+  font-family: 'ONE-Mobile-Title';
+  font-size: calc(0.7vmax + 2px);
+  font-weight: 100;
+  color: #d1d1d1;
+}
+
+.project-box-content-epilogue1 {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 40%;
+  height: 7%;
+}
+.project-box-content-epilogue2 {
+  position: absolute;
+  top: 10%;
+  display: block;
+  width: 90%;
+  height: 30%;
+}
+.project-box-content-epilogue3 {
+  position: absolute;
+  top: 36%;
+  display: block;
+  width: 40%;
+  height: 7%;
+}
+.project-box-content-epilogue4 {
+  position: absolute;
+  top: 46%;
+  display: block;
+  width: 90%;
+  height: 30%;
 }
 
 
@@ -649,8 +691,18 @@
 }
 #project-info:checked ~ .app-container .project-box-content1 {
   opacity: 100%;
-  transition: 1s;
-  transition-delay: 1s;
+  animation: contentwait 1.2s ease;
+}
+@keyframes contentwait {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 #project-info:checked ~ .app-container #project-box-effect1 {
   display: none;
@@ -713,8 +765,7 @@
 }
 #project-pre:checked ~ .app-container .project-box-content2 {
   opacity: 100%;
-  transition: 1s;
-  transition-delay: 1s;
+  animation: contentwait 1.2s ease;
 }
 #project-pre:checked ~ .app-container #projectIframe1 {
   display: block;
@@ -780,8 +831,7 @@
 }
 #project-eva:checked ~ .app-container .project-box-content3 {
   opacity: 100%;
-  transition: 1s;
-  transition-delay: 1s;
+  animation: contentwait 1.2s ease;
 }
 #project-eva:checked ~ .app-container #project-box-effect3 {
   display: none;

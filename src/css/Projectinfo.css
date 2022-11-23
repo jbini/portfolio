@@ -164,10 +164,10 @@
 .project-cover-container h4 {
   display: block;
   position: absolute;
-  bottom: calc(0.4vmax + 4px);
+  bottom: calc(0.4vmax + 1px);
   margin: 0;
   font-family: 'RobotoR';
-  font-size: calc(1.1vmax + 4px);
+  font-size: calc(1vmax + 4px);
   color: #ffffff;
 }
 .project-cover-container h5 {
@@ -295,7 +295,7 @@
 .project-box-content-img {
   position: absolute;
   top: 4.4%;
-  left: 31%;
+  right: 8%;
   display: block;
   width: 20%;
 }
@@ -313,7 +313,7 @@
 .project-box-content-name2 {
   position: absolute;
   top: 5%;
-  left: 20%;
+  left: 17%;
   display: block;
   width: 70%;
   height: 7%;
@@ -329,7 +329,7 @@
 .project-box-content-sdate2 {
   position: absolute;
   top: 12%;
-  left: 20%;
+  left: 17%;
   display: block;
   width: 70%;
   height: 7%;
@@ -345,7 +345,7 @@
 .project-box-content-back2 {
   position: absolute;
   top: 19%;
-  left: 20%;
+  left: 17%;
   display: block;
   width: 70%;
   height: 7%;
@@ -361,7 +361,7 @@
 .project-box-content-front2 {
   position: absolute;
   top: 26%;
-  left: 20%;
+  left: 17%;
   display: block;
   width: 70%;
   height: 7%;
@@ -377,11 +377,92 @@
 .project-box-content-member2 {
   position: absolute;
   top: 33%;
-  left: 20%;
+  left: 17%;
   display: block;
   width: 70%;
   height: 7%;
 }
+.project-box-content-objective1 {
+  position: absolute;
+  top: 40%;
+  display: block;
+  width: 20%;
+  height: 7%;
+}
+.project-box-content-objective2 {
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+.project-box-content-objective3 {
+  position: absolute;
+  top: 46%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+.project-box-content-objective4 {
+  position: absolute;
+  top: 52%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+.project-box-content-objective5 {
+  position: absolute;
+  top: 58%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+.project-box-content-objective6 {
+  position: absolute;
+  top: 64%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+
+.project-box-content-part1 {
+  position: absolute;
+  top: 75%;
+  display: block;
+  width: 20%;
+  height: 7%;
+}
+.project-box-content-part2 {
+  position: absolute;
+  top: 75%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+.project-box-content-part3 {
+  position: absolute;
+  top: 81%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+.project-box-content-part4 {
+  position: absolute;
+  top: 87%;
+  left: 17%;
+  display: block;
+  width: 70%;
+  height: 7%;
+}
+
+
 
 
 

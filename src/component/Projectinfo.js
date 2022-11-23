@@ -46,6 +46,16 @@ export default function Projectinfo() {
                     <div className='project-box-content-front2'><h5>ReactJS, HTML, CSS</h5></div>
                     <div className='project-box-content-member1'><h4>Member</h4></div>
                     <div className='project-box-content-member2'><h5>jbini, xljhax, dev-thug, delpotro96</h5></div>
+                    <div className='project-box-content-objective1'><h4>Objective</h4></div>
+                    <div className='project-box-content-objective2'><h5>- API를 활용한 맛집 랭킹 사이트</h5></div>
+                    <div className='project-box-content-objective3'><h5>- 회원제 이용 기능 구현</h5></div>
+                    <div className='project-box-content-objective4'><h5>- 지도, 식당 정보 API 활용 식당 검색 기능 구현</h5></div>
+                    <div className='project-box-content-objective5'><h5>- 텍스트 감정 분석 API 활용 평점 기능 구현</h5></div>
+                    <div className='project-box-content-objective6'><h5>- 식당 예약 기능 구현</h5></div>
+                    <div className='project-box-content-part1'><h4>Jbini Part</h4></div>
+                    <div className='project-box-content-part2'><h5>- HTML, CSS 활용 사이트 구현</h5></div>
+                    <div className='project-box-content-part3'><h5>- Photoshop 활용 배너, 로고 디자인</h5></div>
+                    <div className='project-box-content-part4'><h5>- ReactJS 활용 DB 연동</h5></div>
                 </div>
             </label>
 

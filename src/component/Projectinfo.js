@@ -89,12 +89,12 @@ export default function Projectinfo() {
                         <h5>막히는 부분이 나오면 팀원에게 해결법이나 대안을 받아 실력 향상에 도움이 됐습니다.</h5>
                         <h5>작업 중간에 서로 컨디션 체크를 하고 일상 얘기를 하며 숨을 돌리면 작업 효율이 좋아지기도 했습니다.</h5>
                     </div>
-                    <div className='project-box-content-epilogue3'><h4>좋은 개발자 좋은 코드</h4></div>
+                    <div className='project-box-content-epilogue3'><h4>좋은 개발자, 좋은 코드</h4></div>
                     <div className='project-box-content-epilogue4'>
                         <h5>개발자에게 협업이 필수인 만큼 커뮤니케이션 능력이 중요합니다.</h5>
-                        <h5>123</h5>
-                        <h5>345</h5>
-                        <h5>234</h5>
+                        <h5>단순히 말을 잘하고, 의견을 존중해주는 팀원도 일의 효율을 높여주지만</h5>
+                        <h5>코드를 알아보기 쉽게 정리하고 설명해주는 팀원은 발전을 길을 터줍니다.</h5>
+                        <h5>가독성이 좋고 일관성이 있는 코드를 받고나서 작성했던 코드를 다시 보면 더 효율적인 방법이 보입니다.</h5>
                     </div>
                 </div>
             </label>

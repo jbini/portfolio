@@ -73,7 +73,7 @@ export default function Aboutinfo() {
           </div>
           <div className='about-line8'>
             <div className='line-move'>
-              <h5>아쉬운 부분을 발견하면 대안을 유추해보며 배움을 얻었습니다.</h5>
+              <h5>아쉬운 부분을 발견하면 대안을 유추해 보며 배움을 얻었습니다.</h5>
             </div>
           </div>
           <div className='about-line9'>
